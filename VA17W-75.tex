@@ -1,0 +1,1360 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{lscape}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{threeparttablex}
+
+\captionsetup{justification=raggedright, singlelinecheck=false, labelfont=bf}
+\usepackage[backend=bibtex, style=authoryear, dashed=false, maxbibnames=99, sorting=ydnt]{biblatex}
+\renewcommand{\thesection}{\Roman{section}} 
+
+\newcommand{\makeauthorbold}[1]{%
+  \DeclareNameFormat{author}{%
+    \ifthenelse{\value{listcount}=1}
+    {%
+      {\expandafter\ifstrequal\expandafter{\namepartfamily}{#1}{\mkbibbold{\namepartfamily\addcomma\addspace \namepartgiveni}}{\namepartfamily\addcomma\addspace \namepartgiveni}}
+      %
+    }{\ifnumless{\value{listcount}}{\value{liststop}}
+        {\expandafter\ifstrequal\expandafter{\namepartfamily}{#1}{\mkbibbold{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni}}{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni}}
+        {\expandafter\ifstrequal\expandafter{\namepartfamily}{#1}{\mkbibbold{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni\addcomma\isdot}}{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni\addcomma\isdot}}%
+      }
+    \ifthenelse{\value{listcount}<\value{liststop}}
+    {\addcomma\space}{}
+  }
+}
+\makeauthorbold{Santantonio}
+
+% \usepackage{fancyhdr}
+% \pagestyle{fancy}
+% \fancyhead{} % clear all header fields
+% \renewcommand{\headrulewidth}{0pt} % no line in header area
+% \fancyfoot{} % clear all footer fields
+% \fancyfoot[LE,RO]{\thepage}           % page number in "outer" position of footer line
+% \fancyfoot[RE,LO]{Promotion and Tenure Dossier, Two-year Review, Santantonio, 2020-2022.~} % other info in "inner" position of footer line
+
+\addbibresource{peerReviewed.bib}
+% \AtBeginBibliography{\small}
+\usepackage{xcolor}
+\definecolor{hyperblue}{rgb}{0,0,0.4}
+
+\usepackage[noindentafter]{titlesec}
+
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+\titleformat*{\subsubsection}{\small\bfseries}
+
+% \titlespacing{command}{left spacing}{before spacing}{after spacing}[right]
+% spacing: how to read {12pt plus 4pt minus 2pt}
+%           12pt is what we would like the spacing to be
+%           plus 4pt means that TeX can stretch it by at most 4pt
+%           minus 2pt means that TeX can shrink it by at most 2pt
+%       This is one example of the concept of, 'glue', in TeX
+
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+
+\usepackage{hyperref}[hidelinks]
+
+\hypersetup{
+	colorlinks = true, %Colours links instead of ugly boxes
+	urlcolor = hyperblue, %Colour for external hyperlinks
+	linkcolor = hyperblue, %Colour of internal links
+    anchorcolor = hyperblue,
+    citecolor = hyperblue,
+    filecolor = hyperblue,
+     }
+
+\usepackage[letterpaper, margin=1in]{geometry}
+% \textwidth=470pt
+% \oddsidemargin=0pt
+% \topmargin=0pt
+% \headheight=0pt
+% \textheight=660pt
+% \headsep=0pt
+
+\setlength{\parskip}{0.2\baselineskip}%
+
+\title{Request for release of VA17W-75}
+% \author{Nicholas Santantonio}
+\date{\today}
+
+\renewcommand{\topfraction}{0.7}  % max fraction of floats at top
+\renewcommand{\floatpagefraction}{0.7}% max fraction of page used for floats
+\renewcommand{\textfraction}{.2} % minimum fraction of page used for text
+
+\begin{document}
+
+\maketitle
+
+\section{Parentage, Breeding History, and Cultivar Name}
+
+
+VA17W-75 is a soft red winter (SRW) wheat line derived from the cross VA09W-45 / `Yorktown' (PI 667643), completed in spring of 2011.  Parentage of VA09W-45 is GF921221E16 / VA98W-590 (a sibling of `McCormick') // VA99W-200.  The F1 generation was grown in 2011 as a single 4 ft headrow in Warsaw, VA to produce F2 seed. The population was advanced from the F2 to F4 generation using a modified bulk breeding method where wheat spikes were selected in each segregating generation on the basis of absence of obvious disease, maturity, short straw and desirable head shape and size. Selected spikes were threshed in bulk, and the seed was planted in 225 ft2 blocks at Blacksburg and/or Warsaw, VA in the fall of each year. Single heads from an F4 segregating population grown in both Warsaw, VA (118 heads) and Blacksburg, VA (101 heads) in 2015 were planted into single 4 ft. headrows for the 2016 harvest season. VA71W-75 was established from one of these F4:5 headrows in the summer of 2016, originating from the F4 segregating population grown in Blacksburg, and tested in the 2017 SRW Observation in Blacksburg and Warsaw VA. This line was advanced to the SRW Preliminary for the 2018 harvest season, tested in Blacksburg VA, Warsaw VA and Painter, VA, and subsequently evaluated in the Virginia official variety trial from 2019-2021 (Tables \ref{ovt}--\ref{ovt21}). For the 2019 harvest season, VA17W-75 was evaluated in the Gulf Atlantic regional nursery (8 locations, Table \ref{gawn}) and the Mason Dixon regional nursery (5 locations, Table \ref{mdxn}). In 2020, VA17W-75 was evaluated in the USDA-ARS Uniform Eastern Soft Red Winter Wheat Nursery (UESRWWN; 19 locations, Tables \ref{uen}--\ref{ussn}). 
+
+\section{Description of the Variety}
+
+VA17W-75 is a broadly adapted, high yielding, high test weight, early, semi-dwarf (Rht2) SRW wheat with acceptable milling and baking quality.  Line VA17W-75 expresses high levels of resistance to powdery mildew (\textit{Blumeria graminis}), leaf rust (\textit{Puccinia triticina}), and Fusarium Head Blight (\textit{Fusarium graminearum}), as well as moderate resistance to stripe rust (\textit{Puccinia striiformis}), Barley Yellow Dwarf Virus, leaf blotch (\textit{Septoria tritici}) and leaf and glume blotch (\textit{Septoria nodorum}; Tables \ref{ovt}--\ref{uen}, \ref{ussn}). VA17W-75 has tapering blue-green heads with tip awns (apically awnletted), a blue waxy stem, an erect twisted waxy green flag leaf, yellow anthers, yellow straw, and white chaff.
+
+Mean head emergence of VA17W-75 in Virginia is early (118 d) similar to `SY Viper', 2 days earlier than `Hilliard' (PI 676271), 4 days earlier than `Argi MAXX 473', and about a day later than `Laverne' (PI 692615). Mean plant height is 35 inches, similar to that of `Featherstone 125', 1.5 inches shorter than `SY Viper' and `Hilliard', and 5 inches taller than `Laverne'. Straw strength (0 = erect to 9 = completely lodged) is good at 0.75 across three years in Virginia (Table \ref{ovt}). 
+
+Across three years, VA17W-75 ranked third in mean grain yield (89.0 bu/ac) in the Virginia Tech Official Variety Test in the state of Virginia, from 2019 to 2021, not significantly different from the highest yielding line, SY Viper (89.8 bu/ac; Table \ref{ovt}). In 2019, VA17W-75 had a mean grain yield (88.1 bu/ac) over 6 locations that was significantly (P $<$ 0.05) higher (6\%) than the overall trial average (83.4 bu/ac) and not significantly lower than the top yielding line, `SY Viper' (92.6; Table \ref{ovt19}). In 2020, VA17W-75 had a mean grain yield (93.1) over 7 locations just below the significance threshold to be different from the trial mean (mean + LSD = 89.2 + 4.6 = 93.8; Table \ref{ovt20}). Grain yield was significantly higher than the trial mean again in 2021 (P$<0.05$), and not significantly different from the second highest yielding line (Table \ref{ovt21}). In and across all three years, the mean test weight of VA17W-75 (59.5 lb/bu) was significantly greater than the trial average (58.3 lb/bu; Tables \ref{ovt}--\ref{ovt21}). In the 2019 Mason Dixon Trial, VA17W-75 ranked first out of 68 entries for grain yield(88.3 bu/ac) across 5 locations in VA, KY and NC, with a similar yield to that of the second highest yielding line, Shirley (87.0 bu/ac; Table \ref{mdxn}). In 2019, VA17W-75 ranked 8th out of 55 entries in the Gulf Atlantic Wheat Nursery for grain yield (65.9 bu/ac; trial mean = 60.9; Table \ref{gawn}). VA17W-75 ranked 5th in the 2020 USDA-ARS Uniform Eastern SRW wheat nursery for grain yield (77.5 bu/ac; Tables \ref{uen}--\ref{uenloc}) among 29 entries evaluated over 19 locations, and did not differ significantly (P > 0.05) from the second highest yielding entry, IL15-2639 (84.5), but was significantly lower than the highest yielding entry, KWS291 (85.4 bu/ac). In that test, VA17W-75 had the second highest test weight of the trial (58.7 lb/bu), significantly higher than the overall trial average (57.4 lb/bu).  
+
+Grain samples of VA17W-75 produced in 6 crop environments (2017--2020) were evaluated for end use quality by the USDA-ARS Soft Wheat Quality Lab.  VA17W-75 has expressed slightly poorer milling and baking quality than Hilliard across 6 yield trials (data not shown 2017--2019; 2020 in Table \ref{qual2}). However, a recent submission for more thorough quality testing from large plots grown in Lanexa VA in 2021 demonstrated similar milling and baking quality to Hilliard, as well as very desirable characteristics for strong gluten (Table \ref{qual}), similar to those of Pioneer 25R26, an older line prized for high gluten strength in its time (Harry Levine; personal communication).
+
+
+\section{Disease, Insect and Other Interactions}
+
+Reaction of VA17W-75 to various plant diseases and insect pests recorded over a diverse set of environments (Tables \ref{ovt}--\ref{uen}, \ref{ussn}). VA17W-75 is highly resistant to powdery mildew (\textit{Blumeria graminis}), having never received a score greater than 0 (0=immunity to 9=very susceptible).  VA17W-75 contains leaf rust resistance genes \textit{Lr9} and \textit{Lr19}, and is also highly resistant to leaf rust (\textit{Puccinia triticina}) in the field, with average ratings ranging from 0 to 1.0.  The USDA-ARS Cereal Disease Lab in St. Paul, MN (data summarized here) evaluated seedling resistance of entries in the Uniform Eastern SRW Wheat Nursery for resistance (0;--3) to 9 races of leaf rust (\textit{Puccinia triticina}). VA17W-75 was resistant (0; to ;1) to all races tested, PBLRQ, MMPSD, MJBJG, TBBGS, MBPSD, MCTNB, MHDSB, MFJSB and KFBJG. VA17W-75 was also determined in the greenhouse at Virginia Tech to be resistant to race TCRKG, but susceptible to race TNRJJ. 
+
+Seedling disease screens (0-2, resistant and 3-4, susceptible) of entries in the 2020 Uniform Eastern Nursery with 15 races of stem rust (\textit{Puccinia graminis}) were conducted by the Cereal Disease Lab, with VA17W-75 demonstrating moderate resistance to all but three races (2- or 2 for QFCSC, QTHJC, MCCFC, RCRSC, RKRQC, TPMKC, TTTTF, GFMNC, QCCSM, TTKSK , TTKTT, TTTSK (Ug99); 3 for TKTTF and TTKTT+, 2+3 for TKKTP). In field tests conducted by the Cereal Disease Lab at St. Paul, MN using a composite of stem rust races (QFCSC, QTHJC, MCCFC, RCRSC, RKRQC, and TMPKC) as inoculum, VA17W-75 had stem rust severity (0--100\%) and reaction type rating of 20RMR. These results support the detection of the 1A:1R rye translocation in VA17W-75. 
+
+VA17W-75 was shown in 2019 to be moderately susceptible to stripe rust (\textit{Puccinia striiformis}) in field trials with mean disease scores (0--9) varying from 1 to 4 (Tables \ref{mdxn}--\ref{gawn}).  In controlled environment trials conducted by USDA-ARS Wheat Genetics, Quality, Physiology, and Disease Research Unit at Pullman, WA in 2020, VA17W-75 showed susceptibility to five tested races (PSTv-4, PSTv-14, PSTv-37, PSTv-40, and PSTv-51) of stripe rust. Average infection type (0--9) for adult plants of VA17W-75 were rated as 2 for races PSTv-14 and PSTv-40, and rated 5 for race PSTv-37. VA17W-75 had infection type (0-9) ratings varying from 0 to 8 in the Uniform Eastern for field trials conducted at four locations in Washington State. Stripe rust severity (\%) ratings varied from 2 to 50\%, suggesting moderate susceptibility. Stripe rust races in Washington differ for virulence and are more diverse than those in the eastern U.S. 
+
+VA17W-75 has an average response (2.17) to Barley Yellow Dwarf Virus (Table \ref{ovt}), while also having an average response to leaf blotch caused by caused by Septoria tritici (3.8) and leaf (5) and glume (3.3) blotch cause by Septoria nodorum.  In growth chamber tests (Tables \ref{mdxn}--\ref{gawn}) conducted by USDA-ARS at West Lafayette, IN, seedlines of VA17W-75 were shown to be resistant to B,C,D,O biotypes of Hessian fly but susceptible to biotype L. Reaction of VA17W-75 to Wheat Spindle Streak Mosaic Virus and Wheat Soil Borne Mosaic Virus is not known.
+
+VA17W-75 has demonstrated very good resistance to fusarium head blight, or scab, caused by \textit{Fusarium graminearum} (Tables \ref{ovt}--\ref{uen}, \ref{ussn}), with lower index, FDK and Deoxynivalenol (DON) toxin levels. Across years 2019 and 2020 with high infection in the misted, inoculated nursery in Virginia, VA17W-75 had a significantly lower ISK index within and across years (P$<0.05$) and ranked 4th lowest DON value (1.98 ppm) out of 69 entries, with the resistant check `Jamestown' having a higher DON value (3.56 ppm). VA17W-75 (0.56 ppm) had the second lowest DON value in 2020, eclipsed only by `MAS {\#}106' (0.24 ppm). Similar trends were observed in 2021 Virginia OVT despite infection rates being poor that year, but because infection rates were poor, they were not added to the over year means (Table \ref{ovt21}). Across 8 locations in 2019, similar performance was observed in the regional Southern Uniform Soft Winter Wheat Scab nursery, with VA17W-75 having a mean ISK of 42, 20\% FDK, and 5ppm DON compared to the susceptible check, `Jamestown' with ISK of 38, 21\% FDK, and 4 ppm DON (Table \ref{ussn}). In the Gulf Atlantic Nursery, VA17W-75 had an FDK of 27\% and DON levels of 7 ppm in VA compared to Hilliard (MR) with FDK of 45\% and DON of 21 ppm (Table \ref{gawn}). In the 2019 Mason Dixon Nursery, VA17W-75 had an FDK of 10\% and DON levels of 5 ppm in VA compared to Hilliard (MR) with FDK of 25\% and DON of 6 ppm (Table \ref{mdxn}). These results support the DNA marker data indicating that VA17W-75 contains the 1A and 6A Neusse QTL alleles that infer partial resistance to FHB. 
+
+\section{Justification for Release}
+
+Line VA17W-75 like Hilliard is a widely adapted, high yielding, wheat variety with acceptable milling and baking qualities and expresses moderate to high levels of resistance to most of the predominant diseases in the SRW wheat region, with the exception of stripe rust.  In comparison to Hilliard, VA17W-75 is earlier maturing by 2 days (P $<$ 0.05), has significantly (P $<$ 0.05) higher test weight (59.4 versus 58.2 lb/bu), and has higher grain yield over multiple seasons (+2.4 bu/ac; LSD = 2.7 bu/ac; Table \ref{ovt}). Importantly, VA17W-75 is numerically more resistant to scab over multiple trials and years to moderately resistant cultivars `Jamestown' and `Hilliard' (Tables \ref{ovt}--\ref{gawn}, \ref{ussn}). Although, with the variability in FHB traits, each single comparison was not statistically significant. VA17W-75 is often among the most resistant lines under evaluation in the nursery, where no large-effect single R genes against scab are currently known. 
+
+\section{Areas of Adaptation}
+ 
+VA17W-75 appears most well adapted to the mid Atlantic and lower Midwest. VA17W-75 produced a three-year (2019 to 2020) mean yield that was significantly (P < 0.05) higher than the trial average for the Virginia State wheat test, ranking 3rd after SY Viper and USG 3329 (N.S.; Table \ref{ovt}).  It ranked 1st in the 2019 Mason Dixon Nursery (Table \ref{mdxn}) and 8th in the 2019 Gulf Atlantic Nursery (Table \ref{gawn}) producing mean yields that were 19\% and 8\% higher than the respective trial averages.  In the Mason Dixon, VA17W-75 ranked among the top 16 lines in every location, including first in both Raleigh NC and Lexington, KY, and 11th and 13th in the Warsaw and Blacksburg VA locations.  In the Gulf Atlantic Nursery, VA17W-75 placed among the top 13 lines in Marianna, AR (1), Blacksburg VA (13), Plains GA (13), and Prosper, TX(11), while failing below the mean in Kinston NC(32), Raleigh NC(35), and Florence SC (42). In the 2020 Uniform Eastern SRW Wheat Nursery, VA17W-75 ranked 5th in grain yield over 17 locations (Table \ref{uen}), yields significantly (P $<$ 0.05) higher than test averages at Warsaw VA (rank = 1) and Highland, IL (3). In the Eastern Uniform, it ranked 7th or higher in trials located in AR (1/2), IL (3/4), IN (1/2) NE (1/1) NY(1/1) OH (½) TN(1/1) and VA(2/2).
+
+Line VA17W-75 was entered into 2021-2022 Official Variety Trials in AL, AR, DE, GA, IL, KY, LA, MD, MO, MS, NC, NY, OH, PA, SC, TN, and VA to better determine where it should be marketed. 
+
+\section{Breeder and Foundation Seed Available}
+
+During fall 2019, 400 headrows of the wheat line VA17W-75 were planted in an isolation block and evaluated for purity and trueness of type during spring 2020. Among these, 54 rows with differential phenotypes were identified and removed. These included 36 lines that were too tall, 2 that were tall and awnletted, 6 late heading types, 1 early heading type, 3 bluer types, 2 greener types, 2 with waxy heads, 1 prostrate and 1 with blue blocky heads. Three headrows were uneven and thus removed from the total as a cautionary measure. This left remaining 343 lines with very similar phenotypic appearance with a variance of 54/397 = 13.6\%. Fifty pounds of breeder seed was planted on 0.5 acres at the Virginia Crop Improvement Association in the fall of 2020. The harvested seed from the breeder seed increase in 2020 was used to plant an additional 8.75 acres at VCIA in the fall of 2021, with ~700 bushels expected to be available for fall 2022 planting. 
+
+\section{Regional Variety Release Committee}
+
+No regional committee exists.
+
+\section{Proposed Method and Agency Responsible for Distribution}
+
+The Virginia Crop Improvement Association will be responsible for distribution of Foundation Seed of VA17W-75 through the Foundation Seed Farm at Mount Holly, Virginia, unless other arrangements are agreed upon.
+
+\section{Proposed Method and Agency Responsible for Maintenance of Breeder Seed}
+
+
+Breeder Seed of VA17W-75 will be maintained under the School of Plant and Environmental Sciences in affiliation with the Virginia Agricultural Experiment Station located in Blacksburg, Virginia.
+
+\section{Persons Submitting Request}
+
+Nicholas Santantonio, School of Plant and Environmental Sciences
+
+\section{Parties Potentially Interested in Obtaining Marketing Rights}
+
+Exclusive Release: JoMar Seeds, Inc. (USA and Ontario)
+
+\begin{figure}
+\caption{Increase plot of VA17W-75 grown in Warsaw in 2021 (May 26, 2021).}
+\includegraphics[width=0.95\linewidth]{VA17W-75date5-26-21}
+\end{figure}
+
+
+\newpage
+
+\global\pdfpageattr\expandafter{\the\pdfpageattr/Rotate 90}
+
+% \renewcommand\topfraction{1}
+% \renewcommand\bottomfraction{0}
+
+\begin{landscape}
+
+\footnotesize
+
+\begin{ThreePartTable}
+\begin{TableNotes}
+\footnotesize
+\item A plus or minus sign indicates a performance significantly above or below the test average.
+\item The 0-9 ratings indicate a genotype's response to disease or lodging where 0 = highly resistant and 9 = highly susceptible.
+\item Parentheses below column headings indicate the number of site-years in which data were collected.
+\item [a] Barley Yellow Dwarf
+% \item [b] Fusarium head blight Index = (Incidence $\times$ Severity)/100.
+\item [b] Fusarium Diseased Kernels (percent).
+\item [c] ISK Index = (0.3 $\times$ FHB Incidence + 0.3 $\times$ FHB Severity + 0.4 $\times$ Fusarium damaged kernels) / 100.
+\item [d] Deoxynivalenol concentration in the kernels (ppm).
+\end{TableNotes}
+% \begin{longtable}{@{} l *{10}{c} @{}}
+
+\begin{longtable}{lllllllllllll}
+\caption{Virginia State Official Variety Test across 3 years, 2019-2021, comprised of 19 site-years.}
+\label{ovt}\\
+\toprule%
+     & Grain  & Test    & Date     & Mature & Plant   & Leaf  & Powdery & BYD\tnote{a} &          &              &              &             \\ 
+     & Yield  & Weight  & Headed   & Height & Lodging & Rust  & Mildew  & Virus        & Septoria & FDK\tnote{b} & ISK\tnote{c} & DON\tnote{d}\\ 
+     & bu/ac   & lb/bu  & Julian   & in     & 0-9     & 0-9   & 0-9     & 0-9          & 0-9      & \%           &              & ppm         \\ 
+\cmidrule(l){2-13}%
+Line & (19)   & (19)    & (6)      & (9)    & (10)    & (5)   & (4)     & (3)          & (1)      & (2)          & (2)          & (2)         \\ 
+% \cmidrule(l){2-13}%
+\midrule%
+\endfirsthead
+\toprule
+     & Grain  & Test    & Date     & Mature & Plant   & Leaf  & Powdery & BYD\tnote{a}   &          &     &     &     \\ 
+Line & Yield  & Weight  & Headed   & Height & Lodging & Rust  & Mildew  & Virus & Septoria & FDK\tnote{b} & ISK\tnote{c} & DON\tnote{d} \\ 
+% \cmidrule(l){2-13}%
+\midrule%
+\endhead%
+\midrule%
+mean & 85.0 & 58.3 & 120.6 & 34.9 & 0.4 & 1.4 & 0.5 & 1.7 & 3.1 & 22.4 & 33.8 & 6.1 \\ 
+CV & 9.7 & 1.7 & 1.0 & 4.6 &  &  &  &  &  & 32.4 & 23.4 & 63.1 \\ 
+LSD & 2.7 & 0.3 & 0.6 & 0.8 & 0.4 & 0.7 & 0.5 & 1 & 1.1 & 14.5 & 13.6 & 9.5 \\ 
+\multicolumn{13}{r@{}}{continued \ldots}\\
+\bottomrule%
+\insertTableNotes
+\endfoot%
+\midrule%
+mean & 85.0 & 58.3 & 120.6 & 34.9 & 0.4 & 1.4 & 0.5 & 1.7 & 3.1 & 22.4 & 33.8 & 6.1 \\ 
+CV & 9.7 & 1.7 & 1.0 & 4.6 &  &  &  &  &  & 32.4 & 23.4 & 63.1 \\ 
+LSD & 2.7 & 0.3 & 0.6 & 0.8 & 0.4 & 0.7 & 0.5 & 1 & 1.1 & 14.5 & 13.6 & 9.5 \\ 
+\bottomrule%
+\insertTableNotes
+\endlastfoot%
+  SY Viper & 89.8+ & 59.6+ & 118- & 37+ & 1 & 3+ & 0 & 1 & 3 & 16 & 26 & 4 \\ 
+  USG 3329 & 89.4+ & 58.0- & 121 & 35 & 0 & 4+ & 0 & 2 & 4 & 18 & 34 & 4 \\ 
+  \textbf{VA17W-75} & 89.0+ & 59.5+ & 118- & 35 & 1 & 0- & 0- & 2 & 2 & 14 & 19- & 2 \\ 
+  Pioneer 26R59 & 88.9+ & 58.2 & 121 & 32- & 0 & 3+ & 0 & 3 & 2 & 37 & 52+ & 5 \\ 
+  MAS \#86 & 88.5+ & 57.1- & 121+ & 36+ & 0 & 3+ & 0 & 2 & 3 & 13 & 18- & 3 \\ 
+  Featherstone 125 & 88.3+ & 60.4+ & 122+ & 35 & 1 & 0- & 1+ & 0- & 3 & 22 & 39 & 7 \\ 
+  13VTK429-3 & 88.2+ & 59.2+ & 122+ & 35 & 0 & 0- & 0 & 1- & 2 & 33 & 47 & 7 \\ 
+  Progeny \#BUSTER & 88.0+ & 58.7+ & 122+ & 35 & 0- & 1 & 1 & 2 & 3 & 30 & 43 & 8 \\ 
+  AgriMAXX 473 & 87.0 & 57.8- & 122+ & 36+ & 0 & 0- & 0 & 3+ & 2 & 10 & 28 & 4 \\ 
+  Shirley & 87.0 & 57.1- & 122+ & 33- & 0 & 0- & 0- & 2 & 2- & 43+ & 59+ & 11 \\ 
+  VA17W-74 & 87.0 & 59.5+ & 118- & 35 & 1 & 0- & 0- & 2 & 3 & 21 & 30 & 3 \\ 
+  Pioneer 26R45 & 86.7 & 58.1 & 121+ & 36+ & 1 & 1 & 1 & 2 & 3 & 13 & 29 & 1 \\ 
+  Hilliard & 86.6 & 58.3 & 120 & 37+ & 0 & 1- & 0 & 1 & 3 & 22 & 29 & 6 \\ 
+  SY Richie & 86.6 & 58.1 & 117- & 34- & 0 & 0- & 0 & 1- & 2 & 28 & 43 & 10 \\ 
+  USG 3316 & 86.5 & 58.2 & 123+ & 35 & 0 & 4+ & 3+ & 2 & 4 & 18 & 32 & 6 \\ 
+  MAS \#316 & 86.4 & 57.7- & 124+ & 36+ & 0 & 3+ & 1+ & 3+ & 3 & 14 & 25 & 5 \\ 
+  MBX 17-M-245 & 86.4 & 57.5- & 120- & 34- & 0 & 2+ & 0 & 3+ & 2 & 28 & 46 & 6 \\ 
+  Progeny \#BULLET & 85.8 & 57.7- & 123+ & 36+ & 0 & 1 & 0 & 2 & 3 & 17 & 26 & 3 \\ 
+  13VTK59-55 & 85.2 & 59.3+ & 121 & 34- & 0 & 0- & 0 & 0- & 2- & 18 & 39 & 5 \\ 
+  Laverne & 85.2 & 58.3 & 118- & 30- & 0 & 0- & 1 & 1- & 4+ & 21 & 32 & 5 \\ 
+  LW2848 & 85.2 & 57.7- & 123+ & 36+ & 0 & 1 & 0 & 2 & 3 & 8- & 24 & 4 \\ 
+  DH13SRW022-23 & 85.1 & 58.5 & 122+ & 34- & 0 & 1- & 0- & 0- & 5+ & 20 & 28 & 3 \\ 
+  SY 547 & 84.9 & 58.1 & 120 & 37+ & 1 & 1 & 0 & 2 & 3 & 28 & 39 & 6 \\ 
+  Liberty 5658 & 84.8 & 59.1+ & 119- & 36+ & 0 & 1- & 0 & 0- & 5+ & 15 & 21 & 6 \\ 
+  SH 4400 & 84.7 & 58.5 & 124+ & 36+ & 0 & 3+ & 2+ & 2 & 4 & 32 & 47 & 5 \\ 
+  CP8118 & 84.4 & 57.1- & 119- & 32- & 0 & 0- & 0 & 1 & 3 & 18 & 34 & 5 \\ 
+  SY 007 & 84.4 & 58.1 & 119- & 35 & 0 & 2 & 0 & 2 & 3 & 12 & 25 & 5 \\ 
+  LW2958 & 84.3 & 58.7+ & 122+ & 36+ & 0 & 2 & 0 & 2 & 3 & 14 & 26 & 3 \\ 
+  USG 3118 & 84.1 & 59.4+ & 118- & 32- & 0 & 0- & 0 & 2 & 3 & 17 & 30 & 5 \\ 
+  USG 3536 & 83.7 & 57.8- & 122+ & 36 & 1 & 1 & 0 & 2 & 3 & 10 & 20- & 4 \\ 
+  15VDH-SRW02-075 & 83.6 & 58.8+ & 123+ & 36+ & 0 & 0- & 0 & 1 & 3 & 22 & 39 & 11 \\ 
+  SY 576 & 82.1- & 57.1- & 127+ & 36+ & 0 & 1- & 2+ & 2 & 4 & 22 & 33 & 4 \\ 
+  Progeny \#BERKELEY & 81.3- & 57.9- & 118- & 34- & 0 & 1 & 0 & 2 & 4+ & 30 & 41 & 13 \\ 
+  SH 7200 & 80.9- & 59.0+ & 118- & 36+ & 1 & 0- & 0 & 4+ & 2 & 42+ & 53+ & 10 \\ 
+  MAS \#67 & 79.9- & 56.7- & 121 & 34- & 0 & 2 & 1+ & 2 & 3 & 5- & 12- & 1 \\ 
+  MAS \#106 & 75.1- & 58.2 & 115- & 34- & 1 & 2 & 2+ & 2 & 4+ & 6- & 8- & 1 \\ 
+  Massey & 69.7- & 58.8+ & 121 & 38+ & 1+ & 7+ & 0 & 1 & 3 & 23 & 32 & 4 \\ 
+  % \hline
+  % mean & 85 & 58.3 & 120.6 & 34.9 & 0.4 & 1.4 & 0.5 & 1.7 & 3.1 & 22.4 & 33.8 & 6.1 \\ 
+  % CV & 9.7 & 1.7 & 1 & 4.6 &  &  &  &  &  & 32.4 & 23.4 & 63.1 \\ 
+  % LSD & 2.7 & 0.3 & 0.6 & 0.8 & 0.4 & 0.7 & 0.5 & 1 & 1.1 & 14.5 & 13.6 & 9.5 \\ 
+  % \multicolumn{13}{r@{}}{continued \ldots}\\
+  % \endfoot
+  % \hline
+  % mean & 85 & 58.3 & 120.6 & 34.9 & 0.4 & 1.4 & 0.5 & 1.7 & 3.1 & 22.4 & 33.8 & 6.1 \\ 
+  % CV & 9.7 & 1.7 & 1 & 4.6 &  &  &  &  &  & 32.4 & 23.4 & 63.1 \\ 
+  % LSD & 2.7 & 0.3 & 0.6 & 0.8 & 0.4 & 0.7 & 0.5 & 1 & 1.1 & 14.5 & 13.6 & 9.5 \\ 
+  % \hline
+  % \endlastfoot
+\end{longtable}
+% \end{landscape}
+
+\end{ThreePartTable}
+
+
+\newpage
+
+\begin{ThreePartTable}
+\begin{TableNotes}
+\footnotesize
+\item A plus or minus sign indicates a performance significantly above or below the test average.
+\item The 0-9 ratings indicate a genotype's response to disease or lodging where 0 = highly resistant and 9 = highly susceptible.
+\item Parentheses below column headings indicate the number of site-years in which data were collected.
+\item [a] Barley Yellow Dwarf
+% \item [b] Fusarium head blight Index = (Incidence $\times$ Severity)/100.
+\item [b] Fusarium Diseased Kernels (percent).
+\item [c] ISK Index = (0.3 $\times$ FHB Incidence + 0.3 $\times$ FHB Severity + 0.4 $\times$ Fusarium damaged kernels) / 100.
+\item [d] Deoxynivalenol concentration in the kernels (ppm).
+\end{TableNotes}
+% \begin{longtable}{@{} l *{10}{c} @{}}
+
+% \footnotesize
+% \begin{landscape}
+\begin{longtable}{llllllllllll}
+\caption{Virginia State Official Variety Test across 6 locations in 2019.}
+\label{ovt19}\\
+\toprule%
+      & Grain  & Test    & Date     & Mature & Plant   & Leaf  & Powdery & BYD\tnote{a} &              &              &              \\ 
+      & Yield  & Weight  & Headed   & Height & Lodging & Rust  & Mildew  & Virus        & FDK\tnote{b} & ISK\tnote{c} & DON\tnote{d} \\ 
+      & bu/a   & lb/bu   & Julian   & In     & 0-9     & 0-9   & 0-9     & 0-9          & \%           &              & ppm          \\ 
+\cmidrule(l){2-12}%
+ Line & (6)    & (6)     & (2)      &  (3)   &  (5)    & (2)   & (1)     & (1)          & (1) & (1) & (1) \\
+\midrule
+\endfirsthead
+\toprule
+     & Grain  & Test    & Date     & Mature & Plant   & Leaf  & Powdery & BYD\tnote{a}   &     &     &  \\ 
+Line & Yield  & Weight  & Headed   & Height & Lodging & Rust  & Mildew  & Virus & FDK\tnote{b} & ISK\tnote{c} & DON\tnote{d} \\ 
+\midrule
+\endhead%
+\midrule%
+  mean & 83.4 & 57.7 & 120.1 & 32 & 0.6 & 1.9 & 0.5 & 2 & 28 & 37.7 & 9.9 \\ 
+  CV & 7.6 & 1.3 & 0.5 & 5.2 & 201.8 & 42.9 & 125.2 & 37.1 &  & 14.6 &  \\ 
+  LSD & 3.7 & 0.4 & 0.6 & 1.3 & 0.7 & 1.1 & 1.2 & 1.2 &  & 10.8 &  \\ 
+\multicolumn{12}{r@{}}{continued \ldots}\\
+\bottomrule%
+\insertTableNotes
+
+\endfoot%
+\midrule
+  mean & 83.4 & 57.7 & 120.1 & 32 & 0.6 & 1.9 & 0.5 & 2 & 28 & 37.7 & 9.9 \\ 
+  CV & 7.6 & 1.3 & 0.5 & 5.2 & 201.8 & 42.9 & 125.2 & 37.1 &  & 14.6 &  \\ 
+  LSD & 3.7 & 0.4 & 0.6 & 1.3 & 0.7 & 1.1 & 1.2 & 1.2 &  & 10.8 &  \\ 
+\bottomrule%
+\insertTableNotes
+\endlastfoot%
+% \begin{tabular}{llllllllllll}
+% \hline%
+%  & Grain  & Test & Date & Mature & Plant & Leaf & Powdery & BYD &  &  &  \\ 
+% Line & Yield & Weight & Headed &  Height & Lodging & Rust & Mildew & Virus & FDK & ISK & DON \\ 
+%  & (bu/a)  & (lb/bu)  & (Julian)  & (In)  & (0-9) & (0-9) & (0-9) & (0-9) & \% &  & ppm \\ 
+% & (6) & (6) & (2) &  (3) &  (5) & (2) & (1) & (1) & (1) & (1) & (1) \\ 
+% \hline%
+  SY Viper & 92.6+ & 59.2+ & 118- & 34+ & 1 & 4+ & 0 & 2 & 18 & 28 & 6 \\ 
+  Pioneer 26R59 & 91.8+ & 57.4 & 120 & 30- & 0 & 4+ & 0 & 3 & 30 & 48 & 7 \\ 
+  PGX 18-8 & 91.6+ & 57.9 & 121+ & 31 & 0 & 3+ & 0 & 1 & 40 & 43 & 15 \\ 
+  KWS19X09 & 90.2+ & 57.3- & 119- & 32 & 0 & 4+ & 0 & 1 & 30 & 41 & 8 \\ 
+  Dyna-Gro WX19712 & 89.9+ & 57- & 120 & 32 & 0 & 1 & 0 & 1 & 50 & 45 & 16 \\ 
+  PGX 18-7 & 89.8+ & 58.6+ & 120 & 32 & 0 & 2 & 0 & 3 &  &  &  \\ 
+  USG 3316 & 89.8+ & 57.7 & 122+ & 32 & 1 & 4+ & 2+ & 3 & 20 & 30 & 9 \\ 
+  Armor ARW1813 & 89.7+ & 57.1- & 120 & 32 & 0 & 4+ & 0 & 3 &  &  &  \\ 
+  SY 100 & 89.3+ & 55.8- & 121+ & 31 & 1 & 4+ & 0 & 2 & 15 & 38 & 9 \\ 
+  SR 8144 & 89.2+ & 57.1- & 117- & 32 & 1 & 0- & 0 & 1 &  &  &  \\ 
+  VA15W-86 & 89.1+ & 57.7 & 119- & 32 & 1 & 0- & 0 & 1 & 20 & 32 & 14 \\ 
+  \#Warrior & 89+ & 57- & 120 & 31 & 0 & 4+ & 0 & 2 & 55 & 57+ & 18 \\ 
+  USG 3790 & 89+ & 58 & 122+ & 31 & 0 & 4+ & 0 & 1 & 35 & 42 & 19 \\ 
+  Pioneer 26R36 & 88.7+ & 57.8 & 121+ & 31 & 1 & 1- & 4+ & 1 & 35 & 34 & 5 \\ 
+  15VDH-FHB-MAS25-08 & 88.5+ & 58.6+ & 117- & 31 & 1 & 0- & 0 & 1 & 30 & 30 & 8 \\ 
+  Dyna-Gro 9941 & 88.5+ & 56.4- & 122+ & 33 & 0 & 4+ & 0 & 2 & 22 & 29 & 8 \\ 
+  MBX 17-M-245 & 88.5+ & 57.1- & 120 & 32 & 0 & 4+ & 0 & 2 & 45 & 51+ & 12 \\ 
+  LCS 11814 & 88.4+ & 56.5- & 118- & 29- & 2+ & 1- & 0 & 2 & 10 & 24- & 6 \\ 
+  Pioneer 26R10 & 88.4+ & 57.3- & 121+ & 32 & 0 & 4+ & 0 & 2 & 22 & 38 & 6 \\ 
+  VA16W-148 & 88.3+ & 59+ & 122+ & 33 & 1 & 2 & 0 & 2 & 35 & 35 & 14 \\ 
+  VA17W-176 & 88.3+ & 58.6+ & 119- & 31 & 0 & 0- & 2+ & 1 & 25 & 40 & 6 \\ 
+  USG 3458 & 88.1+ & 56.9- & 120 & 31 & 0 & 4+ & 0 & 2 & 40 & 52+ & 6 \\ 
+  \textbf{VA17W-75} & 88.1+ & 58.7+ & 118- & 33 & 1 & 1 & 0 & 2 & 20 & 23- & 3 \\ 
+  VA09MAS1-12-5-1-1 & 88+ & 59.4+ & 121+ & 32 & 1 & 0- & 0 & 1 &  &  &  \\ 
+  AgriMAXX Exp 1902 & 87.9+ & 56.9- & 121+ & 31 & 0 & 3+ & 2+ & 2 & 25 & 26- & 10 \\ 
+  VA17W-167 & 87.9+ & 57.6 & 122+ & 33+ & 1 & 0- & 0 & 2 & 35 & 60+ & 10 \\ 
+  \#Blaze & 87.8+ & 57.5 & 120 & 33 & 1 & 4+ & 0 & 3+ & 30 & 39 & 4 \\ 
+  USG 3329 & 87.7+ & 57.6 & 119- & 33 & 0 & 4+ & 0 & 3 & 18 & 39 & 7 \\ 
+  AgriMAXX 486 & 87.3+ & 57.2- & 123+ & 33 & 0 & 4+ & 1 & 2 & 30 & 32 & 10 \\ 
+  VA16W-149 & 87.3+ & 58 & 122+ & 31 & 1 & 1- & 0 & 2 & 25 & 38 & 6 \\ 
+  MAS \#86 & 87 & 56.7- & 121+ & 32 & 1 & 3 & 0 & 1 & 22 & 19- & 5 \\ 
+  13VTK429-3 & 86.8 & 58.4+ & 122+ & 32 & 0 & 1 & 0 & 1- & 35 & 44 & 7 \\ 
+  15VDH-FHB-MAS41-13 & 86.8 & 61.1+ & 117- & 35+ & 0 & 0- & 0 & 1 & 18 & 39 & 8 \\ 
+  USG 3895 & 86.6 & 57.2- & 121+ & 30- & 1 & 1 & 3+ & 2 & 40 & 52+ & 10 \\ 
+  VA16W-202 & 86.6 & 56.7- & 119- & 30- & 0 & 0- & 0 & 1 &  &  &  \\ 
+  USG 3197 & 86.5 & 56.1- & 119- & 33+ & 1 & 1 & 2 & 1 & 8 & 14- & 4 \\ 
+  USG 3404 & 86.4 & 57.1- & 122+ & 32 & 1 & 3+ & 2+ & 1 & 20 & 32 & 5 \\ 
+  Armor ARW1819 & 86.3 & 57.9 & 121+ & 31 & 1 & 3 & 0 & 1 & 30 & 34 & 12 \\ 
+  VA09MAS2-131-6-2 & 86.3 & 58.1 & 118- & 28- & 0 & 0- & 0 & 1 &  &  &  \\ 
+  Dyna-Gro WX19714 & 86.2 & 56.6- & 121+ & 32 & 0 & 4+ & 0 & 3+ & 25 & 32 & 10 \\ 
+  Armor Velocity & 86.1 & 58.2 & 119- & 32 & 1 & 2 & 3+ & 3 & 25 & 26- & 9 \\ 
+  KY07C-1145-94-12-5 & 86 & 59+ & 119- & 33 & 1 & 4+ & 0 & 2 & 20 & 41 & 4 \\ 
+  LCS 11718 & 86 & 56.2- & 120 & 33 & 1 & 1 & 0 & 2 & 28 & 34 & 7 \\ 
+  DH13SRW022-23 & 85.7 & 58 & 122+ & 32 & 1 & 1- & 0 & 1- & 25 & 27 & 5 \\ 
+  MAS \#61 & 85.7 & 57.5 & 119- & 31- & 2+ & 2 & 2 & 2 & 20 & 29 & 6 \\ 
+  AgriMAXX 495 & 85.6 & 58.6+ & 121 & 32 & 0 & 2 & 0 & 3 & 30 & 34 & 6 \\ 
+  AgriMAXX 415 & 85.5 & 58.9+ & 120 & 32 & 1 & 3+ & 2 & 2 & 35 & 44 & 9 \\ 
+  Dyna-Gro 9600 & 85.5 & 56.7- & 118- & 33 & 0 & 1 & 0 & 2 & 8 & 19- & 3 \\ 
+  LW2958 & 85.5 & 58.1 & 121+ & 34+ & 1 & 2 & 0 & 3 & 18 & 28 & 4 \\ 
+  Dyna-Gro 9811 & 85.3 & 57.6 & 120 & 33 & 1 & 1- & 0 & 3 & 30 & 40 & 11 \\ 
+  CROPLAN CP9606 & 85.2 & 56.8- & 120 & 32 & 0 & 3 & 0 & 3 & 20 & 44 & 6 \\
+  SY 007 & 85.2 & 58.1 & 118- & 32 & 0 & 2 & 0 & 3 & 10 & 33 & 9 \\ 
+  Pioneer 26R45 & 85.1 & 58 & 121+ & 34+ & 1 & 2 & 2 & 3 & 20 & 21- & 2 \\ 
+  MAS \#35 & 85 & 57- & 122+ & 32 & 1 & 4+ & 0 & 2 & 50 & 42 & 12 \\ 
+  VA16W-29 & 84.8 & 57.2- & 123+ & 33 & 0 & 4+ & 0 & 1 & 60 & 59+ & 23 \\ 
+  VA17W-74 & 84.8 & 58.8+ & 118- & 33 & 0 & 1- & 0 & 1 & 30 & 36 & 6 \\ 
+  LCS 11719 & 84.7 & 57.8 & 122+ & 30- & 0 & 3 & 0 & 2 & 40 & 39 & 15 \\ 
+  \#Berkeley & 84.6 & 57- & 118- & 32 & 1 & 1 & 0 & 2 &  &  &  \\ 
+  Shirley & 84.6 & 56.9- & 121+ & 31 & 1 & 1 & 0 & 2 &  &  &  \\ 
+  VA16W-224 & 84.6 & 56.5- & 123+ & 34+ & 1 & 2 & 0 & 1 & 30 & 44 & 14 \\ 
+  AgriMAXX 463 & 84.4 & 56.4- & 119- & 31 & 0 & 3 & 0 & 1 & 8 & 10- & 2 \\ 
+  DH12SRW057-006 & 84.4 & 59.8+ & 122+ & 30- & 0 & 0- & 0 & 1- & 50 & 60+ & 17 \\ 
+  PGX 17-16 & 84.4 & 58.6+ & 120 & 32 & 0 & 3 & 1 & 2 & 18 & 30 & 5 \\ 
+  VA16W-108† & 84.4 & 57.7 & 121 & 33 & 1 & 1 & 0 & 1 & 40 & 58+ & 9 \\ 
+  15VDH-SRW02-075 & 84.3 & 57.7 & 122+ & 33 & 1 & 0- & 0 & 1 & 32 & 43 & 18 \\ 
+  DH12SRW056-058 & 84.3 & 58.6+ & 118- & 33 & 1 & 1 & 0 & 1 &  &  &  \\ 
+  Pioneer 26R41 & 84.3 & 57.5 & 122+ & 30- & 0 & 1- & 0 & 1 & 35 & 39 & 10 \\ 
+  MBX 969 & 84.2 & 56.5- & 121+ & 32 & 0 & 4+ & 1 & 2 & 15 & 24- & 7 \\ 
+  Dyna-Gro 9772 & 84 & 56.4- & 119- & 32 & 0 & 1- & 1 & 2 & 25 & 26- & 5 \\ 
+  DH12SRW057-081 & 83.9 & 59+ & 118- & 31- & 1 & 1- & 1 & 2 & 8 & 25- & 2 \\ 
+  LW2937 & 83.9 & 56.6- & 122+ & 32 & 1 & 4+ & 2 & 3 & 20 & 29 & 8 \\ 
+  PGX 18-2 & 83.8 & 58.7+ & 118- & 32 & 0 & 1 & 0 & 2 & 30 & 35 & 8 \\ 
+  Hilliard & 83.7 & 57.6 & 120 & 34+ & 0 & 1 & 0 & 1 & 27 & 34 & 10 \\ 
+  VA16W-124† & 83.7 & 58.2 & 119- & 31 & 1 & 1- & 0 & 1 & 40 & 54+ & 10 \\ 
+  15VDH-FHB-MAS22-15 & 83.5 & 59+ & 115- & 32 & 1 & 0- & 0 & 1 & 20 & 29 & 9 \\ 
+  Dyna-Gro 9980 & 83.5 & 58.8+ & 118- & 31 & 0 & 4+ & 0 & 2 & 20 & 20- & 6 \\ 
+  Dyna-Gro WX19711 & 83.3 & 58.2+ & 122+ & 31 & 0 & 3+ & 0 & 3 & 15 & 28 & 5 \\ 
+  Featherstone 31 & 83.2 & 58.1 & 121+ & 31 & 1 & 1- & 0 & 2 & 25 & 54+ & 9 \\ 
+  GA09129-16E55 & 83.2 & 59+ & 117- & 33 & 0 & 1 & 0 & 3 & 30 & 43 & 9 \\ 
+  MBX 932 & 83.1 & 57.9 & 123+ & 31 & 1 & 4+ & 2 & 2 & 25 & 31 & 3 \\ 
+  AgriMAXX 473 & 83 & 56.9- & 121+ & 34+ & 0 & 1- & 0 & 2 & 15 & 26- & 6 \\ 
+  SH 7510 & 83 & 58 & 121+ & 32 & 1 & 2 & 0 & 2 & 25 & 37 & 8 \\ 
+  VA17W-79 & 83 & 57.8 & 119- & 33 & 1 & 0- & 0 & 1 & 20 & 34 & 12 \\ 
+  Dyna-Gro 9932 & 82.8 & 58.3+ & 121+ & 33 & 0 & 2 & 0 & 1 & 15 & 24- & 4 \\ 
+  Dyna-Gro 9701 & 82.6 & 57- & 122+ & 34+ & 1 & 2 & 0 & 2 & 8 & 18- & 4 \\ 
+  KWS19X03 & 82.6 & 56.8- & 124+ & 30- & 1 & 2 & 0 & 2 & 40 & 47 & 12 \\ 
+  VA16W-105† & 82.6 & 56.8- & 120 & 32 & 1 & 1 & 0 & 2 & 28 & 46 & 8 \\ 
+  GA071518-16E39 & 82.5 & 58.3+ & 119- & 32 & 0 & 2 & 0 & 2 & 80 & 85+ & 36 \\ 
+  MAS \#105 & 82.5 & 57.8 & 122+ & 31 & 0 & 3 & 1 & 3 & 20 & 24- & 4 \\ 
+  USG 3228 & 82.4 & 56.4- & 119- & 31 & 0 & 2 & 2+ & 2 & 5 & 10- & 1 \\ 
+  DH11SRW066-153† & 82.3 & 59.2+ & 123+ & 33 & 1 & 2 & 0 & 1 & 40 & 42 & 13 \\ 
+  AgriMAXX Exp 1906 & 82.2 & 57.5 & 119- & 32 & 0 & 1- & 0 & 3 & 30 & 50+ & 17 \\ 
+  15VDH-FHB-MAS22-14 & 82.1 & 60.5+ & 119- & 32 & 1 & 0- & 0 & 1 & 8 & 8- & 4 \\ 
+  AgriMAXX 485 & 82.1 & 57.7 & 122+ & 30- & 0 & 3+ & 2+ & 2 & 20 & 22- & 3 \\ 
+  LW2848 & 82.1 & 56.8- & 122+ & 34+ & 0 & 2 & 0 & 1 & 10 & 17- & 6 \\ 
+  KY09C-1245-99-12-3 & 82 & 57.4 & 119- & 32 & 0 & 2 & 0 & 3+ & 22 & 29 & 7 \\ 
+  CROPLAN CP9415 & 81.8 & 57.4 & 122+ & 31 & 0 & 4+ & 2+ & 4+ & 40 & 49+ & 16 \\ 
+  LW2867 & 81.8 & 57.7 & 123+ & 32 & 0 & 4+ & 0 & 3+ & 15 & 23- & 2 \\ 
+  USG 3118 & 81.8 & 58.6+ & 118- & 30- & 0 & 0- & 0 & 3 & 25 & 36 & 10 \\ 
+  VA13W-38 & 81.7 & 58.3+ & 117- & 31 & 0 & 1 & 0 & 1 & 12 & 18- & 10 \\ 
+  Dyna-Gro 9750 & 81.5 & 56.2- & 119- & 31 & 0 & 2 & 2 & 3 & 5 & 8- & 1 \\ 
+  VA12MAS7-519-1-3WS & 81.5 & 55.8- & 123+ & 32 & 1 & 1 & 0 & 1 & 55 & 51+ & 36 \\ 
+  MAS \#108 & 81.4 & 57.6 & 118- & 31 & 1 & 1 & 0 & 3 & 50 & 58+ & 24 \\ 
+  \#Bullet & 81.3 & 56.7- & 122+ & 33 & 1 & 1 & 0 & 2 &  &  &  \\ 
+  SH 4400 & 81.1 & 57.6 & 123+ & 33 & 1 & 5+ & 2+ & 3 & 30 & 43 & 7 \\ 
+  DH13SRW021-70 & 81 & 56.9- & 120 & 30- & 0 & 1- & 0 & 1 & 15 & 38 & 8 \\ 
+  MAS \#7 & 81 & 57.4 & 119- & 32 & 1 & 2 & 0 & 5+ & 40 & 59+ & 11 \\ 
+  TX15D9597 & 81 & 58.5+ & 118- & 33+ & 1 & 1 & 0 & 3+ & 45 & 63+ & 24 \\ 
+  Armor Mayhem & 80.9 & 57.6 & 121+ & 32 & 1 & 3 & 0 & 3 & 5 & 20- & 3 \\ 
+  VA16W-196 & 80.9 & 57.6 & 125+ & 29- & 0 & 0- & 0 & 1 & 25 & 37 & 6 \\ 
+  MAS \#67 & 80.8 & 56.4- & 120 & 31- & 0 & 2 & 0 & 2 & 5 & 7- & 1 \\ 
+  TX15D9253 & 80.8 & 55.8- & 118- & 32 & 1 & 1- & 0 & 2 & 60 & 73+ & 26 \\ 
+  13VTK434-89 & 80.6 & 59.5+ & 119- & 35+ & 0 & 1- & 0 & 2 & 15 & 39 & 6 \\ 
+  15VDH-FHB-MAS33-30 & 80.6 & 59.7+ & 117- & 31 & 1 & 0- & 0 & 2 & 18 & 44 & 10 \\ 
+  VA11MAS2-92-3-2-2 & 80.6 & 58.8+ & 123+ & 31 & 1 & 1- & 2+ & 1 & 40 & 59+ & 10 \\ 
+  MAS \#316 & 80.4 & 57.1- & 123+ & 33 & 1 & 4+ & 2 & 3 & 20 & 27- & 8 \\ 
+  VA17W-126 & 80.3 & 57.7 & 118- & 34+ & 1 & 1- & 0 & 2 & 25 & 33 & 12 \\ 
+  VA11MAS2-68-4-1-3 & 80.2 & 58.5+ & 118- & 27- & 0 & 1- & 0 & 1 & 25 & 29 & 9 \\ 
+  CROPLAN CP8800 & 80.1 & 56.5- & 121 & 33 & 0 & 1 & 1 & 2 & 30 & 37 & 8 \\ 
+  KWS19X08 & 80 & 58.1 & 121+ & 33 & 0 & 1- & 0 & 3 & 40 & 50+ & 14 \\ 
+  SH 7200 & 80 & 58 & 118- & 33 & 1 & 1- & 0 & 3 & 60 & 72+ & 16 \\ 
+  MAS \#116 & 79.9 & 57.4 & 122+ & 34+ & 1 & 1 & 0 & 3 & 15 & 28 & 5 \\ 
+  USG 3536 & 79.9 & 56.6- & 121+ & 33 & 1 & 1 & 0 & 2 & 10 & 18- & 4 \\ 
+  Armor Venom & 79.7- & 57.8 & 121+ & 32 & 1 & 3 & 1 & 3 & 30 & 27 & 4 \\ 
+  13VTK59-55 & 79.6- & 58.7+ & 120 & 30- & 0 & 1- & 0 & 1 & 25 & 42 & 8 \\ 
+  12VTK17-159 & 79.5- & 57- & 120 & 33 & 1 & 1 & 0 & 1 & 25 & 46 & 14 \\ 
+  12VTK17-132 & 79.3- & 58.5+ & 119- & 32 & 0 & 1 & 0 & 1 & 30 & 36 & 11 \\ 
+  DH13SRW025-14 & 79.2- & 56.4- & 118- & 30- & 0 & 0- & 0 & 1 & 32 & 33 & 15 \\ 
+  MBX 17-P-275 & 79.2- & 56.3- & 120 & 31 & 1 & 2 & 1 & 2 & 3 & 8- & 2 \\ 
+  14VDH-SRW06-207 & 79.1- & 58.1 & 122+ & 32 & 1 & 0- & 0 & 1 & 30 & 45 & 8 \\ 
+  NC14-20369 & 79.1- & 58.6+ & 119- & 35+ & 2+ & 1- & 0 & 1 & 28 & 46 & 13 \\ 
+  VA12MAS11-779-5-2 & 79- & 58.1 & 121+ & 32 & 1 & 2 & 0 & 1 & 45 & 43 & 12 \\ 
+  TX15D9579 & 78.7- & 57.1- & 119- & 33 & 0 & 0- & 0 & 2 & 55 & 66+ & 23 \\ 
+  12VTK17-55 & 78.4- & 58.1 & 123+ & 31 & 0 & 0- & 0 & 1 & 50 & 45 & 15 \\ 
+  SY 576 & 77.9- & 56.2- & 125+ & 33+ & 0 & 1 & 4+ & 1 & 25 & 27- & 7 \\ 
+  AgriMAXX 480 & 77.8- & 59.3+ & 117- & 33 & 0 & 2 & 0 & 4+ & 30 & 50+ & 9 \\ 
+  \#Turbo & 77.7- & 56.7- & 118- & 32 & 0 & 2 & 0 & 1 & 15 & 36 & 6 \\ 
+  SY 547 & 77.3- & 57.8 & 120 & 33+ & 1 & 2 & 0 & 3 & 40 & 41 & 10 \\ 
+  MAS \#106 & 76.5- & 57.8 & 115- & 31 & 0 & 3 & 2+ & 3 & 8 & 8- & 2 \\ 
+  CROPLAN CP8550 & 76.2- & 56.8- & 122+ & 34+ & 1+ & 2 & 0 & 3+ & 18 & 25- & 4 \\ 
+  TX15D9608 & 76- & 57.4 & 116- & 30- & 1 & 1- & 0 & 4+ & 30 & 57+ & 19 \\ 
+  GA09436-16LE12 & 75.9- & 60.5+ & 119- & 33+ & 1 & 0- & 0 & 2 & 40 & 66+ & 26 \\ 
+  MAS \#6 & 75.9- & 56.5- & 120 & 30- & 0 & 3+ & 0 & 4+ & 28 & 39 & 10 \\ 
+  DH13SRW023-201 & 74.3- & 61.3+ & 121+ & 33 & 0 & 1- & 0 & 2 & 30 & 37 & 8 \\ 
+  NC15-21834 & 72.8- & 59+ & 121+ & 34+ & 1+ & 1- & 0 & 2 & 25 & 40 & 13 \\ 
+  NC13-21213 & 72.5- & 58.3+ & 120 & 33 & 1 & 1 & 0 & 3 & 55 & 63+ & 15 \\ 
+  Massey & 72.4- & 58.6+ & 120 & 34+ & 1 & 7+ & 0 & 1 & 22 & 37 & 6 \\ 
+  NC14-23372 & 70- & 59.3+ & 123+ & 33 & 1 & 1 & 0 & 3 & 25 & 44 & 14 \\ 
+  % \hline
+  % mean & 83.4 & 57.7 & 120.1 & 32 & 0.6 & 1.9 & 0.5 & 2 & 28 & 37.7 & 9.9 \\ 
+  % CV & 7.6 & 1.3 & 0.5 & 5.2 & 201.8 & 42.9 & 125.2 & 37.1 &  & 14.6 &  \\ 
+  % LSD & 3.7 & 0.4 & 0.6 & 1.3 & 0.7 & 1.1 & 1.2 & 1.2 &  & 10.8 &  \\ 
+  %  \hline
+\end{longtable}
+\end{ThreePartTable}
+
+\newpage
+
+\begin{ThreePartTable}
+\begin{TableNotes}
+\footnotesize
+\item A plus or minus sign indicates a performance significantly above or below the test average.
+\item The 0-9 ratings indicate a genotype's response to disease or lodging where 0 = highly resistant and 9 = highly susceptible.
+\item Parentheses below column headings indicate the number of site-years in which data were collected.
+% \item [a] Barley Yellow Dwarf
+% \item [b] Fusarium head blight Index = (Incidence $\times$ Severity)/100.
+\item [a] Fusarium Diseased Kernels (percent).
+\item [b] ISK Index = (0.3 $\times$ FHB Incidence + 0.3 $\times$ FHB Severity + 0.4 $\times$ Fusarium damaged kernels) / 100.
+\item [c] Deoxynivalenol concentration in the kernels (ppm).
+\end{TableNotes}
+
+\begin{longtable}{llllllllllll}
+\caption{Virginia State Official Variety Test across 6 locations in 2020.}
+\label{ovt20}\\
+\toprule%
+     & Grain  & Test    & Date     & Mature & Plant   & Leaf  & Powdery &          &     &     &  \\ 
+     & Yield  & Weight  & Headed   & Height & Lodging & Rust  & Mildew  & Septoria & FDK\tnote{a} & ISK\tnote{b} & DON\tnote{c} \\ 
+     & bu/a   & lb/bu   & Julian   & In     & 0-9     & 0-9   & 0-9     & 0-9      & \%  &     & ppm \\ 
+\cmidrule(l){2-12}%
+Line & (6)    & (6)     & (2)      &  (3)   &  (5)    & (2)   & (1)     & (1)      & (1) & (1) & (1) \\ 
+\midrule%
+\endfirsthead
+\toprule
+     & Grain  & Test    & Date     & Mature & Plant   & Leaf  & Powdery &          &     &     &  \\ 
+Line & Yield  & Weight  & Headed   & Height & Lodging & Rust  & Mildew  & Septoria & FDK\tnote{a} & ISK\tnote{b} & DON\tnote{c} \\ 
+\midrule%
+\endhead%
+\midrule%
+  mean & 89.2 & 58.5 & 117.9 & 38.8 & 0.4 & 1.3 & 0.9 & 3.2 & 17.2 & 30.8 & 2.3 \\ 
+  CV & 8.8 & 2 & 0.9 & 4 &  &  &  &  & 35.6 & 23.6 &  \\ 
+  LSD & 4.6 & 0.7 & 1.1 & 1.2 & 0.7 & 1 & 0.9 & 1.2 & 12.1 & 14.4 &  \\ 
+\multicolumn{12}{r@{}}{continued \ldots}\\
+\bottomrule
+\insertTableNotes
+\endfoot%
+\midrule%
+  mean & 89.2 & 58.5 & 117.9 & 38.8 & 0.4 & 1.3 & 0.9 & 3.2 & 17.2 & 30.8 & 2.3 \\ 
+  CV & 8.8 & 2 & 0.9 & 4 &  &  &  &  & 35.6 & 23.6 &  \\ 
+  LSD & 4.6 & 0.7 & 1.1 & 1.2 & 0.7 & 1 & 0.9 & 1.2 & 12.1 & 14.4 &  \\ 
+\bottomrule
+\insertTableNotes
+\endlastfoot%
+% Line & Grain Yield (Bu/a) (6) & Test Weight (Lb/bu) (6) & Date Headed (Julian) (2) & Mature Height (In) (3) & Plant Lodging (0-9) (5) & Leaf Rust (0-9) (2) & Powdery Mildew (0-9) (1) & Septoria (0-9) (1) & FDK & ISK & DON \\ 
+  MAS \#143 & 102.5+ & 58.7 & 121+ & 39 & 0 & 1 & 1 & 2 & 6 & 21 & 1 \\ 
+  LCS 11719 & 100.2+ & 58.8 & 118 & 38 & 1 & 1 & 0 & 3 & 25 & 52+ & 5 \\ 
+  MBX 127 & 100.1+ & 58.5 & 120+ & 39 & 0 & 2 & 1 & 2 & 9 & 17 & 1 \\ 
+  USG 3790 & 100+ & 58.1 & 120+ & 38 & 0 & 2 & 0 & 3 & 25 & 56+ & 6 \\ 
+  WX20731 & 99.1+ & 58.3 & 122+ & 39 & 1 & 1 & 1 & 2 & 6 & 22 & 1 \\ 
+  LWX20C & 98.4+ & 58.6 & 120+ & 40 & 0 & 2 & 1 & 1- & 8 & 24 & 2 \\ 
+  19-11 & 97.9+ & 58 & 120+ & 39 & 0 & 2 & 0 & 2 & 12 & 26 & 2 \\ 
+  15VDH-FHB-MAS33-13 & 97.3+ & 59.9+ & 118 & 38 & 1 & 0- & 3+ & 1- & 6 & 11- & 1 \\ 
+  13VTK429-3 & 96.9+ & 59.4+ & 120+ & 40 & 0 & 0- & 0 & 2 & 29 & 51+ & 7 \\ 
+  19-10 & 96.8+ & 56.6- & 121+ & 37- & 0 & 2 & 0 & 3 & 19 & 24 & 4 \\ 
+  LW2848 & 96.8+ & 58.4 & 122+ & 40 & 0 & 1 & 1 & 3 & 4- & 30 & 2 \\ 
+  PGX 18-8 & 96.8+ & 59.1 & 120+ & 37- & 0 & 2 & 0 & 3 & 12 & 36 & 4 \\ 
+  MAS1407-056-6-3 & 96+ & 59.9+ & 121+ & 40 & 0 & 1 & 2+ & 2 & 14 & 34 & 1 \\ 
+  SY 547 & 95.8+ & 58.4 & 118 & 42+ & 0 & 1 & 0 & 3 & 20 & 36 & 2 \\ 
+  Pioneer 26R45 & 95.5+ & 58.3 & 119+ & 39 & 1 & 1 & 0 & 3 & 8 & 36 & 1 \\ 
+  MAS \#136 & 95.4+ & 57.8- & 122+ & 38 & 2+ & 3+ & 0 & 3 & 18 & 42 & 4 \\ 
+  DH15SRW65-53 & 95.3+ & 59.5+ & 120+ & 36- & 0 & 0- & 1 & 3 & 25 & 46+ & 3 \\ 
+  AgriMAXX 502 & 95.2+ & 58.6 & 116- & 39 & 0 & 2 & 0 & 3 & 16 & 28 & 2 \\ 
+  LWX20A & 95.2+ & 57.2- & 120+ & 38 & 0 & 4+ & 0 & 3 & 6 & 19 & 3 \\ 
+  MAS \#140 & 95.1+ & 58 & 121+ & 41+ & 0 & 2 & 2+ & 3 & 4- & 17 & 1 \\ 
+  \#Blaze & 94.6+ & 58.5 & 120+ & 39 & 1 & 4+ & 1 & 4 & 12 & 26 & 2 \\ 
+  MAS \#128 & 94.6+ & 57.7- & 123+ & 37- & 0 & 3+ & 2 & 4 & 30+ & 52+ & 3 \\ 
+  L11919 & 94.5+ & 58.6 & 115- & 38 & 1 & 0 & 1 & 2 & 25 & 31 & 2 \\ 
+  PGX 18-7 & 94.5+ & 58.5 & 119+ & 40 & 0 & 1 & 1 & 3 &  &  &  \\ 
+  15VDH-FHB-MAS25-15 & 94.4+ & 60.1+ & 116- & 37- & 0 & 0- & 2 & 3 & 11 & 18 & 2 \\ 
+  16VDH-SRW03-023 & 94.4+ & 58.4 & 118 & 39 & 0 & 0- & 1 & 2 & 16 & 44 & 3 \\ 
+  AgriMAXX 473 & 94.4+ & 58.5 & 121+ & 40 & 0 & 0 & 0 & 2 & 6 & 29 & 2 \\ 
+  Featherstone 125 & 94.4+ & 61+ & 118 & 40 & 0 & 0- & 2+ & 3 & 10 & 22 & 1 \\ 
+  MAS \#316 & 94.4+ & 58.1 & 122+ & 40+ & 0 & 2+ & 2+ & 3 & 8 & 23 & 2 \\ 
+  19-15 & 94.3+ & 59.2+ & 118 & 37- & 1 & 1 & 2 & 4 & 16 & 47+ & 2 \\ 
+  USG 3329 & 94.3+ & 58.1 & 119 & 39 & 1 & 3+ & 1 & 4 & 15 & 28 & 1 \\ 
+  SY 576 & 94.1+ & 57.6- & 126+ & 41+ & 0 & 1 & 3+ & 4 & 18 & 38 & 1 \\ 
+  \#Bullet & 94+ & 58.3 & 121+ & 40 & 1 & 1 & 0 & 3 &  &  &  \\ 
+  MBX 223 & 94+ & 58.5 & 118 & 39 & 1 & 3+ & 0 & 4 & 15 & 28 & 1 \\ 
+  CROPLAN CP9606 & 93.7 & 57.9 & 118 & 38 & 0 & 2 & 2 & 4 & 15 & 40 & 2 \\ 
+  SY Viper & 93.7 & 60.1+ & 114- & 40+ & 1 & 2+ & 0 & 3 & 12 & 24 & 1 \\ 
+  MAS \#133 & 93.6 & 56.4- & 120+ & 40 & 0 & 2+ & 1 & 3 & 11 & 30 & 2 \\ 
+  VA17W-74 & 93.2 & 60+ & 116- & 39 & 1 & 0- & 0 & 3 & 14 & 25 & 1 \\ 
+  \textbf{VA17W-75} & 93.1 & 59.9+ & 117 & 40 & 0 & 0- & 0 & 2 & 9 & 16- & 1 \\ 
+  SH 4400 & 93 & 58.9 & 121+ & 41+ & 0 & 2 & 2+ & 4 & 30+ & 51+ & 4 \\ 
+  14VDH-SRW14-150 & 92.7 & 58.4 & 116- & 39 & 0 & 0- & 0 & 3 & 22 & 32 & 2 \\ 
+  PGX 19-3 & 92.6 & 58.3 & 121+ & 40+ & 0 & 2 & 1 & 4 & 8 & 18 & 1 \\ 
+  AgriMAXX 503 & 92.3 & 58 & 120+ & 40+ & 0 & 2 & 2+ & 3 & 12 & 18 & 1 \\ 
+  EXP 2003 & 92.3 & 57.2- & 119+ & 38 & 0 & 4+ & 0 & 3 & 4- & 15- & 2 \\ 
+  WX20737 & 92.2 & 59.8+ & 117 & 38 & 0 & 2 & 0 & 3 & 12 & 20 & 2 \\ 
+  15VTK-12-21 & 92 & 60.1+ & 121+ & 40 & 0 & 1 & 0 & 2 & 16 & 40 & 3 \\ 
+  Dyna-Gro 9772 & 92 & 55.6- & 120+ & 40 & 0 & 1 & 1 & 3 & 12 & 17 & 1 \\ 
+  GA10268-17LE16 & 91.9 & 58.1 & 122+ & 39 & 5+ & 0- & 0 & 3 & 52+ & 70+ & 10 \\ 
+  WX19713 & 91.9 & 59.6+ & 120+ & 40 & 0 & 5+ & 1 & 3 & 12 & 27 & 2 \\ 
+  GA10407-17E8 & 91.7 & 59.8+ & 118 & 39 & 1 & 0- & 2+ & 4 & 30+ & 51+ & 3 \\ 
+  MBX 246 & 91.6 & 59.1 & 120+ & 41+ & 0 & 2 & 1 & 3 & 10 & 16- & 1 \\ 
+  13VTK59-55 & 91.5 & 59.3+ & 119 & 38- & 0 & 0- & 1 & 2- & 12 & 35 & 2 \\ 
+  USG 3316 & 91.4 & 58.7 & 120+ & 39 & 0 & 4+ & 5+ & 4 & 15 & 34 & 3 \\ 
+  VA17W-176 & 91.3 & 58 & 117- & 39 & 1 & 0- & 2 & 3 & 32+ & 42 & 3 \\ 
+  FL14167LDH-158 & 91.1 & 58.7 & 116- & 41+ & 0 & 0 & 0 & 3 & 22 & 30 & 3 \\ 
+  MBX 176 & 91 & 57.3- & 120+ & 38 & 0 & 5+ & 0 & 3 & 9 & 20 & 2 \\ 
+  15VDH-FHB-MAS34-18 & 90.9 & 60.6+ & 116- & 38 & 0 & 0- & 0 & 2- & 9 & 14- & 1 \\ 
+  19-17 & 90.9 & 57.9 & 116- & 35- & 1+ & 0- & 0 & 4 &  &  &  \\ 
+  MAS \#86 & 90.9 & 57.4- & 119+ & 41+ & 0 & 2 & 0 & 3 & 6 & 18 & 1 \\ 
+  9070 & 90.6 & 58.3 & 117 & 39 & 0 & 2 & 0 & 3 & 16 & 26 & 3 \\ 
+  12VTK4-118 & 90.4 & 59.5+ & 117 & 39 & 0 & 1 & 1 & 2 & 16 & 27 & 2 \\ 
+  AgriMAXX 495 & 90.4 & 58.9 & 120+ & 39 & 0 & 1 & 1 & 3 & 12 & 35 & 2 \\ 
+  SH 7510 & 90.1 & 58.5 & 119+ & 39 & 0 & 0- & 1 & 3 & 22 & 48+ & 2 \\ 
+  USG 3536 & 90.1 & 58.4 & 120+ & 39 & 1 & 1 & 0 & 3 & 8 & 21 & 4 \\ 
+  KWS242 & 90 & 58.6 & 116- & 39 & 0 & 5+ & 1 & 3 & 16 & 24 & 1 \\ 
+  LW2958 & 90 & 58.9 & 120+ & 41+ & 0 & 2 & 0 & 3 & 10 & 24 & 2 \\ 
+  19-12 & 89.9 & 56.7- & 119 & 39 & 0 & 1 & 0 & 4 & 14 & 26 & 2 \\ 
+  GA11656-17E11 & 89.9 & 60.5+ & 118 & 40+ & 1+ & 0- & 1 & 3 & 35+ & 52+ & 5 \\ 
+  MAS \#35 & 89.6 & 58.6 & 121+ & 40 & 1 & 4+ & 2 & 3 & 18 & 32 & 2 \\ 
+  Shirley & 89.5 & 56.8- & 119+ & 37- & 0 & 0- & 0 & 2- &  &  &  \\ 
+  16VDH-SRW07-067 & 89.4 & 58.3 & 114- & 35- & 0 & 0- & 0 & 4 & 15 & 22 & 3 \\ 
+  Liberty 5658 & 89.1 & 59 & 117 & 40 & 0 & 1 & 1 & 5+ & 14 & 17 & 1 \\ 
+  Pioneer 26R59 & 89 & 58.5 & 118 & 36- & 0 & 2 & 1 & 2 & 38+ & 56+ & 3 \\ 
+  Dyna-Gro 9932 & 88.8 & 59.1 & 120+ & 39 & 0 & 1 & 2 & 2 & 22 & 40 & 1 \\ 
+  Dyna-Gro 9941 & 88.7 & 56.5- & 119+ & 38 & 0 & 3+ & 2 & 3 & 15 & 22 & 2 \\ 
+  Hilliard & 88.7 & 58.5 & 117 & 41+ & 0 & 0- & 0 & 3 & 16 & 25 & 3 \\ 
+  SY 007 & 88.7 & 57.6- & 116- & 40 & 0 & 1 & 1 & 3 & 10 & 18 & 2 \\ 
+  16VDH-SRW04-028 & 88.4 & 60.4+ & 116- & 39 & 0 & 0- & 0 & 3 & 15 & 20 & 1 \\ 
+  13VTK59-148 & 88.3 & 59.3+ & 117- & 40+ & 0 & 0- & 1 & 3 & 12 & 23 & 2 \\ 
+  MBX 17-M-245 & 88.2 & 57.7- & 117- & 38- & 0 & 2 & 1 & 2 & 16 & 41 & 1 \\ 
+  SY Richie & 88.1 & 58.1 & 113- & 37- & 0 & 0 & 1 & 2 & 20 & 35 & 3 \\ 
+  USG 3458 & 88 & 57.8- & 118 & 38 & 0 & 2 & 1 & 3 & 20 & 47+ & 3 \\ 
+  16VDH-SRW09-025 & 87.9 & 58.4 & 116- & 41+ & 0 & 0- & 0 & 2 & 22 & 39 & 3 \\ 
+  AgriMAXX 505 & 87.9 & 59.5+ & 121+ & 39 & 0 & 4+ & 1 & 4 & 10 & 19 & 2 \\ 
+  USG 3118 & 87.7 & 60.1+ & 113- & 35- & 1 & 0- & 1 & 3 & 10 & 25 & 1 \\ 
+  AgriMAXX Exp 1902 & 87.5 & 56.6- & 120+ & 37- & 0 & 2 & 3+ & 3 & 26 & 41 & 3 \\ 
+  PGX 18-9 & 87.4 & 56- & 120+ & 38 & 0 & 6+ & 0 & 3 & 4- & 17 & 1 \\ 
+  15VDH-FHB-MAS38-01 & 86.8 & 57- & 112- & 35- & 0 & 0 & 0 & 4 & 5- & 8- & 2 \\ 
+  VA16W-202 & 86.7 & 57.2- & 114- & 34- & 0 & 0- & 0 & 3 &  &  &  \\ 
+  MBX 969 & 86.4 & 56.5- & 120+ & 38 & 0 & 2 & 2 & 3 & 8 & 18 & 1 \\ 
+  15VDH-SRW02-075 & 86.2 & 58.6 & 120+ & 41+ & 0 & 0- & 1 & 3 & 15 & 34 & 5 \\ 
+  DH13SRW022-23 & 85.7 & 58.3 & 119+ & 36- & 0 & 1 & 0 & 5+ & 15 & 28 & 1 \\ 
+  Featherstone 31 & 85.7 & 58.6 & 120+ & 38 & 0 & 1 & 0 & 2 & 22 & 48+ & 3 \\ 
+  FLLA10033C-6 & 85.7 & 57.2- & 120+ & 42+ & 0 & 0- & 1 & 4 & 40+ & 54+ & 6 \\ 
+  16VDH-SRW05-205 & 85.4 & 58.4 & 117 & 37- & 0 & 0- & 0 & 3 & 30+ & 48+ & 5 \\ 
+  MAS \#130 & 85.3 & 58 & 116- & 38 & 0 & 5+ & 0 & 4 & 20 & 28 & 1 \\ 
+  EXP 2002 & 85.2 & 59 & 114- & 40 & 0 & 2 & 1 & 4 & 8 & 11- & 1 \\ 
+  TX15D9579 & 85 & 58.6 & 115- & 40 & 0 & 0- & 0 & 3 & 22 & 39 & 2 \\ 
+  USG 3221 & 84.9 & 59 & 114- & 39 & 0 & 3+ & 1 & 4 & 12 & 12- & 1 \\ 
+  NC15-21834 & 84.8 & 59.9+ & 120+ & 42+ & 3+ & 0- & 0 & 3 & 6 & 25 & 2 \\ 
+  USG 3230 & 84.8 & 57.6- & 118 & 38 & 0 & 2 & 1 & 4 & 22 & 42 & 2 \\ 
+  AgriMAXX 415 & 84.7 & 59 & 118 & 39 & 0 & 2 & 2+ & 3 & 12 & 28 & 2 \\ 
+  NC15-21835 & 84.7 & 59.6+ & 120+ & 42+ & 1+ & 0- & 0 & 3 & 16 & 36 & 2 \\ 
+  15VDH-FHB-MAS22-15 & 84.6- & 60.1+ & 111- & 35- & 0 & 0- & 0 & 3 & 18 & 30 & 2 \\ 
+  CROPLAN CP8081 & 84.1- & 58.6 & 118 & 39 & 0 & 1 & 3+ & 3 & 22 & 25 & 1 \\ 
+  VA15W-86 & 84.1- & 57.7- & 114- & 38 & 1 & 0- & 0 & 3 & 15 & 24 & 2 \\ 
+  9002 & 83.9- & 57.8- & 119 & 40+ & 0 & 2 & 3+ & 3 & 18 & 33 & 2 \\ 
+  FL14078LDH-28 & 83.9- & 60.2+ & 118 & 42+ & 1+ & 1 & 0 & 5+ & 50+ & 52+ & 5 \\ 
+  USG 3895 & 83.7- & 56.9- & 118 & 38 & 0 & 1 & 3+ & 2 & 38+ & 58+ & 5 \\ 
+  TX15D9597 & 83.2- & 59.4+ & 115- & 40 & 0 & 0 & 1 & 4 & 38+ & 54+ & 5 \\ 
+  VA14HRW-25 & 82.9- & 58.5 & 114- & 41+ & 2+ & 0 & 1 & 5+ & 15 & 28 & 2 \\ 
+  KWS333 & 82.7- & 57.1- & 116- & 39 & 0 & 1 & 1 & 5+ & 10 & 18 & 1 \\ 
+  Pioneer 26R10 & 82.6- & 58.5 & 120+ & 40 & 0 & 3+ & 1 & 4 & 22 & 38 & 2 \\ 
+  15VDH-FHB-MAS33-30 & 82.3- & 61.1+ & 112- & 37- & 0 & 0 & 0 & 6+ & 8 & 15- & 1 \\ 
+  Laverne & 82.2- & 58.3 & 114- & 33- & 0 & 0- & 1 & 4 &  &  &  \\ 
+  Berkeley & 81.5- & 57.8- & 113- & 38- & 0 & 1 & 0 & 4 &  &  &  \\ 
+  TX15D9253 & 80.8- & 56.2- & 115- & 40 & 2+ & 0- & 1 & 5+ & 26 & 48+ & 6 \\ 
+  SH 7200 & 80.7- & 59 & 114- & 39 & 1+ & 0- & 1 & 2 & 30+ & 34 & 3 \\ 
+  PGX 18-11 & 79.7- & 58.5 & 113- & 37- & 0 & 0- & 0 & 3 & 15 & 24 & 4 \\ 
+  16VDH-SRW06-131 & 78.7- & 59.2 & 113- & 37- & 1 & 1 & 1 & 3 & 12 & 15- & 1 \\ 
+  MAS \#67 & 77.9- & 56.5- & 118 & 38 & 0 & 2 & 2+ & 3 & 3- & 18 & 1 \\ 
+  PGX 18-2 & 77.9- & 58.2 & 117 & 38 & 0 & 0- & 0 & 4 & 16 & 19 & 2 \\ 
+  AgriMAXX 492 & 77.6- & 59.5+ & 114- & 38 & 0 & 0- & 0 & 7+ & 11 & 18 & 1 \\ 
+  FL15105-LDH145 & 76.5- & 59.8+ & 114- & 39 & 0 & 0- & 1 & 3 & 10 & 14- & 1 \\ 
+  15VDH-FHB-MAS25-08 & 76.4- & 59.2+ & 112- & 37- & 0 & 0- & 1 & 4 & 3- & 6- & 2 \\ 
+  FL15105-LDH110 & 76- & 59.8+ & 114- & 38 & 0 & 0- & 0 & 3 & 8 & 8- & 1 \\ 
+  NC11546-14 & 74.8- & 59.8+ & 117 & 39 & 1 & 0- & 0 & 4 & 8 & 16 & 1 \\ 
+  MAS \#106 & 73.9- & 58.3 & 112- & 37- & 0 & 1 & 3+ & 4 & 3- & 7- & 0 \\ 
+  Massey & 65.7- & 58.7 & 118 & 42+ & 2+ & 7+ & 0 & 3 & 22 & 27 & 2 \\ 
+  %  \hline
+  % mean & 89.2 & 58.5 & 117.9 & 38.8 & 0.4 & 1.3 & 0.9 & 3.2 & 17.2 & 30.8 & 2.3 \\ 
+  % CV & 8.8 & 2 & 0.9 & 4 &  &  &  &  & 35.6 & 23.6 &  \\ 
+  % LSD & 4.6 & 0.7 & 1.1 & 1.2 & 0.7 & 1 & 0.9 & 1.2 & 12.1 & 14.4 &  \\ 
+  %  \hline
+\end{longtable}
+\end{ThreePartTable}
+
+\newpage
+
+\begin{ThreePartTable}
+\begin{TableNotes}
+\footnotesize
+\item A plus or minus sign indicates a performance significantly above or below the test average.
+\item The 0-9 ratings indicate a genotype's response to disease or lodging where 0 = highly resistant and 9 = highly susceptible.
+\item Parentheses below column headings indicate the number of site-years in which data were collected.
+\item [a] Barley Yellow Dwarf
+% \item [b] Fusarium head blight Index = (Incidence $\times$ Severity)/100.
+\item [b] Fusarium Diseased Kernels (percent).
+\item [c] ISK Index = (0.3 $\times$ FHB Incidence + 0.3 $\times$ FHB Severity + 0.4 $\times$ Fusarium damaged kernels) / 100.
+\item [d] Deoxynivalenol concentration in the kernels (ppm).
+\end{TableNotes}
+
+\begin{longtable}{llllllllllll}
+\caption{Virginia State Official Variety Test across 7 locations, 2021}
+\label{ovt21}\\
+\toprule%
+     & Grain  & Test    & Date     & Mature & Plant   & Leaf  & Powdery & BYD\tnote{a}   &     &     &  \\ 
+     & Yield  & Weight  & Headed   & Height & Lodging & Rust  & Mildew  & Virus & FDK\tnote{b} & ISK\tnote{c} & DON\tnote{d} \\ 
+     & bu/a   & lb/bu   & Julian   & in     & 0-9     & 0-9   & 0-9     & 0-9   & \%  &     & ppm \\ 
+\cmidrule(l){2-12}%
+Line & (7)    & (7)     & (2)      &  (3)   &  (7)    & (7)   & (1)     & (2)   & (1) & (1) & (1) \\
+\midrule%
+\endfirsthead
+\toprule
+     & Grain  & Test    & Date     & Mature & Plant   & Leaf  & Powdery & BYD\tnote{a}   &     &     &  \\ 
+Line & Yield  & Weight  & Headed   & Height & Lodging & Rust  & Mildew  & Virus & FDK\tnote{b} & ISK\tnote{c} & DON\tnote{d} \\ 
+\midrule
+\endhead%
+\midrule%
+  mean & 81.9 & 58.8 & 124.5 & 33.2 & 0.1 & 1.4 & 0.1 & 1.7 & 19 & 24.4 & 1.6 \\ 
+  CV & 8.8 & 1.1 & 0.6 & 4 &  &  &  &  & 32.1 & 25 &  \\ 
+  LSD & 3.9 & 0.4 & 0.8 & 1.1 & 0.3 & 1.7 & 0.5 & 1.9 & 12.1 & 12.1 &  \\ 
+\multicolumn{12}{r@{}}{continued \ldots}\\
+\bottomrule
+\insertTableNotes%
+\endfoot%
+\midrule%
+  mean & 81.9 & 58.8 & 124.5 & 33.2 & 0.1 & 1.4 & 0.1 & 1.7 & 19 & 24.4 & 1.6 \\ 
+  CV & 8.8 & 1.1 & 0.6 & 4 &  &  &  &  & 32.1 & 25 &  \\ 
+  LSD & 3.9 & 0.4 & 0.8 & 1.1 & 0.3 & 1.7 & 0.5 & 1.9 & 12.1 & 12.1 &  \\  
+\bottomrule
+\insertTableNotes%
+\endlastfoot%
+% Line & Grain Yield (Bu/a) (7) & Test Weight (Lb/bu) (7) & Date Headed (Julian) (2) & Mature Height (In) (3) & Plant Lodging (0-9) (2) & Leaf Rust (0-9) (1) & Powdery Mildew (0-9) (1) & Barley Yellow Dwarf Virus (0-9) (2) & FDK & ISK & DON \\ 
+  USG EXP 3000 & 90.8+ & 59.5+ & 125 & 33 & 0 & 0 & 0 & 2 & 28 & 23 & 1 \\ 
+  Dyna-Gro 9002 & 89.1+ & 57.7- & 125 & 34 & 0 & 2 & 0 & 0 & 4- & 14 & 0 \\ 
+  AgriMAXX 514 & 88.8+ & 57.4- & 125 & 33 & 0 & 2 & 0 & 4+ & 14 & 11- & 1 \\ 
+  USG 3451 & 88.7+ & 59.8+ & 123- & 34+ & 0 & 0 & 0 & 0 & 25 & 40+ & 1 \\ 
+  15VDH-FHB-MAS38-01 & 88.6+ & 58.1- & 120- & 31- & 0 & 0 & 0 & 0 & 5- & 11- & 1 \\ 
+  CPX91221 & 88.6+ & 60+ & 125+ & 33 & 0 & 3 & 1+ & 1 & 25 & 37+ & 4 \\ 
+  VA19FHB-05 & 88.3+ & 59.4+ & 123- & 35+ & 0 & 4+ & 0 & 0 & 5- & 11- & 1 \\ 
+  USG 3472 & 88+ & 58.4- & 125+ & 34 & 0 & 2 & 0 & 0 & 14 & 12- & 1 \\ 
+  CP8045 & 87.9+ & 58.4- & 125+ & 33 & 0 & 3 & 0 & 1 & 18 & 13 & 2 \\ 
+  Dyna-Gro 9120 & 87.6+ & 60.4+ & 123- & 32- & 0 & 2 & 0 & 3 & 12 & 23 & 2 \\ 
+  MAS \#86 & 87.6+ & 57.2- & 124 & 35+ & 0 & 4+ & 0 & 2 & 15 & 12- & 0 \\ 
+  Progeny \#CHAD & 87.5+ & 57.9- & 124 & 31- & 1+ & 0 & 0 & 1 & 11 & 28 & 1 \\ 
+  VA19W-29 & 87.5+ & 58.7 & 124 & 34 & 0 & 2 & 0 & 3 & 35+ & 32 & 3 \\ 
+  VA19W-79 & 87.2+ & 59.2 & 122- & 35+ & 0 & 0 & 0 & 0 & 35+ & 38+ & 8 \\ 
+  14VDH-SRW14-150 & 86.8+ & 58.8 & 122- & 34 & 0 & 0 & 0 & 2 & 18 & 34 & 2 \\ 
+  Laverne & 86.8+ & 58.5 & 121- & 28- & 0 & 0 & 0 & 0 & 35+ & 50+ & 1 \\ 
+  MAS1407-056-6-3 & 86.8+ & 59.9+ & 126+ & 35+ & 0 & 0 & 0 & 0 & 16 & 15 & 3 \\ 
+  MBX 120 & 86.6+ & 59.1 & 128+ & 33 & 0 & 2 & 0 & 3 & 22 & 21 & 1 \\ 
+  Dyna-Gro WX20734 & 86.5+ & 58.7 & 128+ & 33 & 0 & 2 & 0 & 3 & 14 & 26 & 2 \\ 
+  USG 3329 & 86.5+ & 58.2- & 124- & 34 & 0 & 4+ & 0 & 1 & 12 & 17 & 0 \\ 
+  \textbf{VA17W-75} & 86.3+ & 59.7+ & 119- & 33 & 0+ & 0 & 0 & 2 & 18 & 16 & 1 \\ 
+  Dyna-Gro 9172 & 86.2+ & 58.4- & 125 & 33 & 0 & 2 & 0 & 2 & 11 & 13 & 2 \\ 
+  Shirley & 86.2+ & 57.6- & 125 & 32- & 0 & 1 & 0 & 1 & 28 & 47+ & 1 \\ 
+  16VTK19-201 & 86+ & 59.6+ & 122- & 34 & 0 & 0 & 0 & 1 & 9 & 10- & 1 \\ 
+  DH16-SRW120-064 & 86+ & 59.5+ & 125 & 30- & 0 & 0 & 0 & 1 & 22 & 33 & 1 \\ 
+  SH 9520 & 86+ & 59.1 & 128+ & 33 & 0 & 2 & 0 & 3 & 24 & 31 & 3 \\ 
+  Hilliard & 85.9+ & 58.7 & 124 & 35+ & 0 & 0 & 0 & 1 & 18 & 22 & 3 \\ 
+  16VDH-SRW03-023 & 85.7 & 58.3- & 124 & 34+ & 0 & 0 & 0 & 0 & 25 & 34 & 1 \\ 
+  Pioneer 26R59 & 85.6 & 58.6 & 124 & 29- & 0 & 2 & 0 & 3 & 18 & 46+ & 2 \\ 
+  PROGENY 19-10 & 85.6 & 57.4- & 126+ & 32- & 0 & 2 & 0 & 2 & 18 & 16 & 2 \\ 
+  LW2169 & 85.5 & 58.5 & 125 & 32 & 0 & 2 & 0 & 0 & 20 & 14 & 2 \\ 
+  FS 601 & 85.2 & 57.2- & 125 & 33 & 0 & 2 & 0 & 1 & 11 & 25 & 0 \\ 
+  MAS \#143 & 85.1 & 58.2- & 125+ & 33 & 0 & 2 & 0 & 0 & 22 & 21 & 2 \\ 
+  16VDH-SRW09-025 & 84.7 & 58.8 & 124 & 34+ & 0 & 0 & 0 & 1 & 15 & 27 & 2 \\ 
+  17VDH-SRW03-143 & 84.7 & 60.9+ & 123- & 34 & 0 & 0 & 0 & 2 & 18 & 13 & 2 \\ 
+  15VTK-1-101 & 84.6 & 58.7 & 125+ & 29- & 0 & 0 & 0 & 0 & 22 & 24 & 3 \\ 
+  14VDH-HRW02-029 & 84.5 & 59.2+ & 126+ & 33 & 0 & 0 & 0 & 2 & 18 & 16 & 0 \\ 
+  SY 100 & 84.4 & 56.8- & 126+ & 32- & 0 & 2 & 0 & 4+ & 30 & 42+ & 6 \\ 
+  FS WX21B & 84.3 & 58.3- & 125+ & 33 & 0 & 3 & 0 & 0 & 11 & 16 & 1 \\ 
+  17VDH-SRW05-170 & 84.2 & 58.3- & 125+ & 32- & 0 & 0 & 0 & 1 & 11 & 19 & 2 \\ 
+  DH13SRW022-216 & 84.1 & 59.3+ & 126+ & 34 & 0 & 0 & 0 & 1 & 15 & 18 & 0 \\ 
+  AgriMAXX 492 & 84 & 60.1+ & 123- & 33 & 0 & 0 & 0 & 0 & 14 & 26 & 1 \\ 
+  DH13SRW022-23 & 84 & 59.1 & 126+ & 33 & 0 & 0 & 0 & 0 & 15 & 21 & 1 \\ 
+  SY Viper & 84 & 59.6+ & 124- & 36+ & 1+ & 3 & 0 & 0 & 8 & 30 & 1 \\ 
+  15VDH-FHB-MAS33-13 & 83.9 & 59 & 124 & 33 & 0 & 0 & 0 & 1 & 4- & 8- & 0 \\ 
+  DH15SRW65-53 & 83.9 & 59.9+ & 125+ & 30- & 0 & 0 & 0 & 1 & 38+ & 39+ & 4 \\ 
+  16VDH-SRW03-018 & 83.8 & 60.3+ & 123- & 34 & 0 & 0 & 0 & 1 & 18 & 19 & 2 \\ 
+  AgriMAXX 513 & 83.8 & 58.7 & 125 & 33 & 0 & 2 & 0 & 2 & 25 & 19 & 0 \\ 
+  MAS \#316 & 83.8 & 57.9- & 126+ & 35+ & 0 & 4+ & 0 & 4+ & 14 & 8- & 1 \\ 
+  15VDH-FHB-MAS25-15 & 83.6 & 59.1 & 123- & 32- & 0 & 0 & 0 & 1 & 11 & 13 & 1 \\ 
+  Dyna-Gro 9151 & 83.6 & 59.9+ & 125+ & 33 & 0 & 4+ & 0 & 4+ & 6- & 14 & 1 \\ 
+  PROGENY PGX 20-2 & 83.6 & 61.1+ & 123- & 34 & 1+ & 2 & 0 & 1 & 12 & 32 & 0 \\ 
+  13VTK59-55 & 83.5 & 59.8+ & 124 & 33 & 0 & 0 & 0 & 0 & 10 & 25 & 1 \\ 
+  AgriMAXX 516 & 83.5 & 58.4- & 125+ & 32 & 0 & 4+ & 0 & 1 & 10 & 10- & 3 \\ 
+  13VTK429-3 & 83.4 & 59.8+ & 125+ & 34 & 0 & 0 & 0 & 1 & 14 & 17 & 2 \\ 
+  Dyna-Gro WX21741 & 83.4 & 58.6 & 125 & 35+ & 0 & 2 & 0 & 2 & 25 & 16 & 1 \\ 
+  VA17W-74 & 83.3 & 59.8+ & 119- & 34 & 0+ & 0 & 0 & 2 & 9 & 16 & 1 \\ 
+  AgriMAXX 473 & 83.2 & 57.9- & 125 & 34 & 0 & 0 & 0 & 3 & 5- & 17 & 1 \\ 
+  KWS340 & 83.1 & 59.3+ & 126+ & 33 & 0 & 0 & 0 & 2 & 14 & 17 & 1 \\ 
+  AgriMAXX 505 & 83 & 60.2+ & 125 & 34 & 0 & 4+ & 0 & 5+ & 12 & 17 & 1 \\ 
+  Featherstone 125 & 83 & 60.7+ & 126+ & 34 & 0 & 0 & 0 & 0 & 18 & 16 & 2 \\ 
+  AgriMAXX 502 & 82.9 & 58.3- & 124 & 33 & 0 & 2 & 0 & 5+ & 10 & 21 & 2 \\ 
+  MBX 127 & 82.9 & 58.1- & 125+ & 33 & 0 & 2 & 0 & 1 & 10 & 13 & 2 \\ 
+  KWS263 & 82.8 & 57.5- & 126+ & 34 & 0 & 0 & 0 & 1 & 22 & 24 & 2 \\ 
+  MAS \#139 & 82.7 & 57.5- & 126+ & 31- & 0 & 5+ & 0 & 3 & 42+ & 32 & 1 \\ 
+  DH15SRW67-151 & 82.6 & 58- & 127+ & 31- & 0 & 0 & 0 & 1 & 16 & 15 & 1 \\ 
+  USG 3118 & 82.6 & 59.4+ & 123- & 31- & 0 & 0 & 0 & 1 & 18 & 28 & 1 \\ 
+  USG 3536 & 82.5 & 58.4 & 125 & 34 & 0 & 1 & 0 & 3 & 18 & 31 & 1 \\ 
+  Progeny \#BULLET & 82.4 & 58.2- & 125 & 35+ & 0 & 0 & 0 & 2 & 15 & 18 & 0 \\ 
+  SY Richie & 82.4 & 58.9 & 122- & 32 & 0 & 0 & 0 & 0 & 25 & 46+ & 3 \\ 
+  Pioneer 26R36 & 82.1 & 58.7 & 126+ & 33 & 0 & 0 & 1+ & 2 & 11 & 10- & 1 \\ 
+  SH 7200 & 82 & 60+ & 122- & 35+ & 0 & 0 & 0 & 4+ & 42+ & 50+ & 2 \\ 
+  Dyna-Gro 9070 & 81.9 & 58.4- & 124 & 33 & 0 & 4+ & 0 & 2 & 6- & 12- & 1 \\ 
+  MBX 17-M-245 & 81.9 & 57.6- & 123- & 32- & 0 & 2 & 0 & 3 & 32+ & 37+ & 1 \\ 
+  Progeny \#BUSTER & 81.5 & 58.9 & 125+ & 33 & 0 & 2 & 0 & 1 & 28 & 23 & 3 \\ 
+  Liberty 5658 & 81.4 & 59.6+ & 123- & 34 & 0 & 0 & 0 & 0 & 12 & 23 & 3 \\ 
+  FS 875 & 81.3 & 57.6- & 124 & 34 & 0 & 4+ & 0 & 1 & 18 & 16 & 0 \\ 
+  MBX 246 & 81.3 & 58.9 & 125+ & 34+ & 0 & 2 & 0 & 3 & 18 & 16 & 1 \\ 
+  MBX 223 & 81.2 & 57.8- & 124 & 33 & 0 & 2 & 0 & 3 & 22 & 21 & 2 \\ 
+  SREXP117 & 81.2 & 56.8- & 123- & 30- & 0 & 1 & 0 & 0 & 8 & 33 & 1 \\ 
+  SY 007 & 81.2 & 58.4- & 123- & 34 & 0 & 1 & 0 & 1 & 18 & 19 & 1 \\ 
+  USG 3232 & 81.2 & 59.5+ & 122- & 32 & 0 & 0 & 0 & 1 & 6- & 15 & 0 \\ 
+  MAS \#133 & 81.1 & 56.1- & 126+ & 33 & 0 & 4+ & 0 & 3 & 12 & 23 & 1 \\ 
+  Dyna-Gro WX20738 & 81 & 58.4- & 125 & 34 & 0 & 0 & 0 & 5+ & 18 & 25 & 1 \\ 
+  VA19W-89 & 81 & 57.9- & 123- & 34 & 0 & 0 & 0 & 3 & 10 & 16 & 1 \\ 
+  FS 624 & 80.9 & 58.7 & 126+ & 34+ & 0 & 4+ & 0 & 5+ & 8 & 21 & 1 \\ 
+  SH 4400 & 80.8 & 59.1 & 127+ & 35+ & 0 & 2 & 1+ & 2 & 15 & 21 & 0 \\ 
+  CP8118 & 80.7 & 57.3- & 123- & 30- & 0 & 0 & 0 & 1 & 11 & 31 & 1 \\ 
+  16VDH-SRW05-205 & 80.5 & 59.1 & 124 & 31- & 0 & 0 & 0 & 2 & 16 & 24 & 2 \\ 
+  AgriMAXX Exp 2002 & 80.5 & 59.5+ & 122- & 32 & 0 & 0 & 0 & 1 & 18 & 25 & 1 \\ 
+  Pioneer 26R45 & 80.4 & 58- & 124 & 34 & 0 & 1 & 0 & 2 & 15 & 30 & 0 \\ 
+  USG 3562 & 80.3 & 58.8 & 125+ & 34 & 0 & 2 & 0 & 1 & 10 & 16 & 1 \\ 
+  USG 3316 & 80.2 & 58.4- & 126+ & 34 & 0 & 6+ & 0 & 1 & 12 & 11- & 0 \\ 
+  GA10127-18E26 & 79.9 & 60+ & 127+ & 32 & 0 & 0 & 1+ & 0 & 32+ & 25 & 6 \\ 
+  LW2068 & 79.7 & 57.8- & 125 & 34 & 0 & 6+ & 0 & 2 & 10 & 10- & 2 \\ 
+  FS 891 & 79.6 & 58.6 & 125 & 33 & 0 & 3 & 0 & 3 & 25 & 34 & 2 \\ 
+  15VDH-SRW02-075 & 79.5 & 59.9+ & 126+ & 35+ & 0 & 0 & 0 & 1 & 28 & 26 & 2 \\ 
+  MAS \#67 & 79.4 & 57.1- & 124- & 32- & 0 & 2 & 0 & 1 & 15 & 24 & 0 \\ 
+  Hardy 2519 & 79.3 & 59.8+ & 124 & 36+ & 0 & 0 & 0 & 1 & 14 & 26 & 1 \\ 
+  MBX 176 & 79.2 & 57.7- & 126+ & 33 & 0 & 4+ & 0 & 5+ & 18 & 13 & 1 \\ 
+  VA19W-31 & 79.2 & 59.7+ & 124 & 33 & 1+ & 0 & 0 & 3 & 22 & 42+ & 1 \\ 
+  SY 547 & 79.1 & 58.3- & 123- & 35+ & 0 & 1 & 0 & 2 & 18 & 19 & 1 \\ 
+  LW2958 & 78.2 & 59 & 125 & 35+ & 0 & 2 & 0 & 1 & 18 & 16 & 1 \\ 
+  MBX 242 & 77.8- & 58.6 & 125 & 34 & 0 & 0 & 0 & 3 & 20 & 17 & 1 \\ 
+  VA14HRW-41 & 77.7- & 58.6 & 126+ & 35+ & 0 & 0 & 0 & 1 & 25 & 19 & 1 \\ 
+  AgriMAXX 503 & 77.5- & 58.7 & 126+ & 34 & 0+ & 2 & 0 & 1 & 4- & 14 & 0 \\ 
+  USG 3230 & 77.4- & 57.7- & 123- & 33 & 0 & 1 & 0 & 1 & 40+ & 37+ & 4 \\ 
+  LW2848 & 77.1- & 57.9- & 125 & 34+ & 0 & 0 & 0 & 2 & 28 & 29 & 1 \\ 
+  AgriMAXX Exp 2019 HRW & 77- & 61.4+ & 127+ & 30- & 0 & 0 & 1+ & 5+ & 30 & 42+ & 2 \\ 
+  SH 9310 & 77- & 60.7+ & 123- & 32 & 0 & 0 & 0 & 2 & 28 & 41+ & 2 \\ 
+  VA19W-24 & 77- & 59.3+ & 124 & 33 & 0 & 0 & 0 & 1 & 25 & 31 & 2 \\ 
+  FS 878 & 76.6- & 56.9- & 124 & 32- & 0 & 3 & 0 & 1 & 22 & 33 & 1 \\ 
+  Progeny \#BERKELEY & 76.6- & 58.7 & 123- & 32 & 0 & 0 & 0 & 1 & 14 & 32 & 1 \\ 
+  GA15VDH-FHB-MAS30-18ESc43F & 76.3- & 58.5 & 123- & 31- & 0 & 0 & 0 & 3 & 22 & 24 & 1 \\ 
+  MAS \#2 & 76.3- & 59.6+ & 126+ & 38+ & 2+ & 1 & 0 & 2 & 42+ & 26 & 0 \\ 
+  AgriMAXX Exp 2020 HRW & 76.1- & 60.4+ & 126+ & 31- & 0 & 0 & 0 & 5+ & 25 & 40+ & 3 \\ 
+  LW2148 & 75.5- & 58.4- & 126+ & 34 & 0+ & 4+ & 0 & 1 & 12 & 29 & 0 \\ 
+  SY 576 & 75.5- & 57.5- & 129+ & 33 & 0 & 0 & 0 & 2 & 55+ & 31 & 4 \\ 
+  KWS380 & 75.4- & 59 & 125 & 32- & 0 & 4+ & 0 & 3 & 15 & 18 & 2 \\ 
+  FLLA10033C-6 & 75- & 58.7 & 125 & 35+ & 0 & 0 & 0 & 4+ & 50+ & 32 & 4 \\ 
+  NC12164-200T & 74.4- & 60.7+ & 124 & 33 & 0 & 1 & 0 & 1 & 30 & 39+ & 3 \\ 
+  NC12642-81 & 74.4- & 60.1+ & 122- & 35+ & 0 & 2 & 0 & 2 & 16 & 33 & 0 \\ 
+  MAS \#106 & 74.2- & 58.6 & 118- & 32 & 1+ & 3 & 0 & 1 & 15 & 30 & 1 \\ 
+  FL14167LDH-158 & 73.4- & 58.9 & 125 & 35+ & 0 & 0 & 0 & 2 & 30 & 18 & 1 \\ 
+  GA15VDH-FHB-MAS23-18LE43F & 73.4- & 59.3+ & 126+ & 31- & 0 & 0 & 0 & 2 & 25 & 25 & 2 \\ 
+  NC12164-97T & 70.6- & 60.2+ & 124 & 36+ & 1+ & 1 & 0 & 1 & 18 & 37+ & 1 \\ 
+  Massey & 70.4- & 59.1 & 124 & 38+ & 1+ & 8+ & 0 & 1 & 8 & 6- & 0 \\ 
+  NC11546-14 & 69.9- & 60+ & 124 & 34 & 0 & 0 & 0 & 3 & 20 & 20 & 0 \\ 
+  FLLA11004-7 & 67.4- & 57.9- & 128+ & 36+ & 0 & 0 & 0 & 1 & 30 & 36 & 2 \\ 
+  %  \hline
+  % mean & 81.9 & 58.8 & 124.5 & 33.2 & 0.1 & 1.4 & 0.1 & 1.7 & 19 & 24.4 & 1.6 \\ 
+  % CV & 8.8 & 1.1 & 0.6 & 4 &  &  &  &  & 32.1 & 25 &  \\ 
+  % LSD & 3.9 & 0.4 & 0.8 & 1.1 & 0.3 & 1.7 & 0.5 & 1.9 & 12.1 & 12.1 &  \\ 
+  %  \hline
+\end{longtable}
+\end{ThreePartTable}
+
+\newpage
+
+% \begin{table}[ht]
+% \caption{Performance of VA17W-75 in the 2019 Mason Dixon Trial (KY, NC, VA)}
+% \centering
+% \begin{tabular}{lllllllllllllllll}
+%   \hline
+%      &  &  & Grain & Test & Heading & Plant & Plant & S.nod & Leaf & Stripe & BYD & Hessian & S. tritici & S.nod &  &  \\ 
+% Line & Yield & Yield & Yield & Weight & Date & Height & Lodging & leaves & Rust & Rust & Virus & Fly & Leaf Blotch & glumes & FDK & DON \\ 
+%      & \% mean & Rank & bu/ac & lb/bu & Jan 1 & in & (0-9) & (0-9) & (0-9) & (0-9) & (0-9) &  & (0-9) & (0-9) & \% & ppm \\ 
+%   Line & (5) & (5) & (5) & (5) & (4) & (5) & (2) & (2) & BVA & LSNC & RNC & RNC & SKY & RNC & MhVA & MhVA \\ 
+%   \hline
+% VA17W-75 & 119 &  1 & 88.3+ & 60.2 & 116 & 33 & 1 & 5 &  2 &  4 &   0 & BCD &  4 &  3.25 & 10 & 5.12 \\ 
+%   Shirley & 117 &  2 & 87+ & 56.7 & 118 & 30- & 1 & 4 &  1 &  9 &   0 & NONE &  5 &  3.50 & 35 & 9.96 \\ 
+%   Pioneer 26R59 & 116 &  3 & 86 & 56.8 & 118 & 29- & 0 & 4 &  6 &  4 &   1 & O &  6 &  2.75 & 30 & 3.76 \\ 
+%   Hilliard & 113 &  7 & 83.8 & 57.7 & 116 & 33 & 1 & 4 &  2 &  2 &   0 & BCD &  4 &  3.25 & 25 & 6.44 \\ 
+%   \hline
+%   mean &  &  & 74.4 & 57.8 & 117.7 & 32.3 & 0.8 & 4.6 &  2 &  6 &   0 &  &  6 &  3.10 &  &  \\ 
+%   CV &  &  & 12.8 & 3.8 & 1.7 & 4.1 & 40.3 & 18.2 & 52 &  & 226 &  & 11 & 31.20 &  &  \\ 
+%   LSD &  &  & 11.8 & 2.7 & 2.8 & 1.7 & 0.7 & 1.7 &  2 &  &   1 &  &  1 &  1.50 &  &  \\ 
+%    \hline
+% \end{tabular}
+% \end{table}
+
+
+\begin{table}[h]
+
+% \begin{TableNotes}
+% \footnotesize
+% \item A plus or minus sign indicates a performance significantly above or below the test average.
+% \item The 0-9 ratings indicate a genotype's response to disease or lodging where 0 = highly resistant and 9 = highly susceptible.
+% \item Parentheses below column headings indicate the number of site-years in which data were collected.
+% \item [a] Barley Yellow Dwarf
+% % \item [b] Fusarium head blight Index = (Incidence $\times$ Severity)/100.
+% \item [b] Fusarium Diseased Kernels (percent).
+% % \item [c] ISK Index = (0.3 $\times$ FHB Incidence + 0.3 $\times$ FHB Severity + 0.4 $\times$ Fusarium damaged kernels) / 100.
+% \item [c] Deoxynivalenol concentration in the kernels (ppm).
+% \end{TableNotes}
+
+\caption{Performance of VA17W-75 in the 2019 Mason Dixon Trial (KY, NC, VA)}
+\label{mdxn}
+\begin{tabular}{llllllllllll}
+\toprule
+     &         &       & Grain & Test   & Heading & Plant  & Plant   & S.nod  & Leaf  & Stripe & BYD$^a$   \\
+     & Yield   & Yield & Yield & Weight & Date    & Height & Lodging & leaves & Rust  & Rust   & Virus \\
+     & \% mean & Rank  & bu/ac & lb/bu  & Jan 1   & in     & 0-9     & 0-9    & 0-9   & 0-9    & 0-9 \\
+% \cmidrule(l){2-12}
+% Line & (5)     & (5)   & (5)   & (5)    & (4)     & (5)    & (2)     & (2)    & BVA   & LSNC   & RNC   \\
+Line & (5)     & (5)   & (5)   & (5)    & (4)     & (5)    & (2)     & (2)    & (1)   & (1)   & (1)   \\
+\midrule
+\textbf{VA17W-75} & 119 &  1 & 88.3+ & 60.2 & 116 & 33 & 1 & 5 &  2 &  4 &   0 \\
+Shirley & 117 &  2 & 87+ & 56.7 & 118 & 30- & 1 & 4 &  1 &  9 &   0 \\
+Pioneer 26R59 & 116 &  3 & 86 & 56.8 & 118 & 29- & 0 & 4 &  6 &  4 &   1 \\
+Hilliard & 113 &  7 & 83.8 & 57.7 & 116 & 33 & 1 & 4 &  2 &  2 &   0 \\
+\midrule
+mean &  &  & 74.4 & 57.8 & 117.7 & 32.3 & 0.8 & 4.6 &  2 &  6 &   0 \\
+CV   &  &  & 12.8 & 3.8 & 1.7 & 4.1 & 40.3 & 18.2 & 52 &  & 226 \\
+LSD  &  &  & 11.8 & 2.7 & 2.8 & 1.7 & 0.7 & 1.7 &  2 &  &   1 \\
+\bottomrule
+% \insertTableNotes
+\end{tabular}
+
+\bigskip 
+
+\begin{tabular}{llllll}
+\toprule
+        & Hessian & S. tritici  & S.nod  &     &     \\ 
+        & Fly$^d$     & Leaf Blotch & glumes & FDK$^b$ & DON$^c$ \\ 
+        &         & 0-9         & 0-9    & \%  & ppm \\ 
+% \cmidrule(l){2-12}
+% Line  & RNC & SKY & RNC & MhVA & MhVA \\ 
+Line  & (1) & (1) & (1) & (1) & (1) \\ 
+\midrule
+\textbf{VA17W-75} & BCD &  4 &  3.25 & 10 & 5.12 \\ 
+Shirley & None &  5 &  3.50 & 35 & 9.96 \\ 
+Pioneer 26R59 & O &  6 &  2.75 & 30 & 3.76 \\ 
+Hilliard & BCD &  4 &  3.25 & 25 & 6.44 \\ 
+\midrule
+mean & &  6 &  3.10 &  &  \\ 
+CV   & & 11 & 31.20 &  &  \\ 
+LSD  & &  1 &  1.50 &  &  \\ 
+\bottomrule
+% \insertTableNotes
+\end{tabular}
+
+\raggedright{
+\footnotesize
+A plus or minus sign indicates a performance significantly above or below the test average.\\
+The 0-9 ratings indicate a genotype's response to disease or lodging where 0 = highly resistant and 9 = highly susceptible.\\
+$^a$Barley Yellow Dwarf \\
+$^b$Fusarium Diseased Kernels (percent) \\
+$^c$Deoxynivalenol concentration in the kernels (ppm)\\
+$^d$Letters indicate resistance to Hessian fly biotypes, B, C, D, O, L} 
+
+\end{table}
+
+% \end{ThreePartTable}
+
+
+\newpage
+
+% \begin{table}[ht]
+% \caption{Performance of VA17W-75 in the 2019 Gulf Atlantic Nursery (AR, GA, LA, NC, SC, TX, VA)}
+% \centering
+% \begin{tabular}{lllllllllllllll}
+%   \hline
+%      &         &       & Grain & Test   & Heading & Plant  & Plant   & Stripe &          &       &     &     & BYD   & Hessian \\
+% Line & Yield   & Yield & Yield & Weight & Date    & Height & Lodging & Rust   & Septoria & FHB   & FDK & DON & Virus & Fly \\
+%      & \% mean & Rank  & bu/ac & lb/bu  & Jan 1   & in     & (0-9)   & (0-9)  & (0-9)    & (0-9) & \%  & ppm & (0-9) &  \\
+%      & (8)     & (8)   & (8)   & (5)    & (7)     & (7)    & (2)     & (4)    & (2)      & (5)   & (3) & (2) & (RNC) & (RNC) \\
+%   \hline
+%   VA17W-75 & 108 &  8.0 & 65.9 & 57.3 & 102 & 34 & 1 & 1 & 4 & 2 & 27 & 7 &  0 & BCDO \\ 
+%   Hilliard & 108 &  9.0 & 65.7 & 57.8 & 107 & 34 & 1 & 1 & 3 & 2- & 45 & 21 &  0 & BCD \\ 
+%   AGS3030 & 100 & 25.0 & 61 & 58.1 & 102 & 34 & 1 & 1 & 4 & 4 & 55 & 10 &  0 & BCDOL \\ 
+%   Pioneer 26R41 & 100 & 27.5 & 60.6 & 57.1 & 108+ & 33 & 1 & 1 & 4 & 2- & 40 & 18 &  1 &  \\ 
+%   SS8641 &  98 & 29.0 & 59.9 & 57.3 & 104 & 35 & 1 & 2 & 2 & 6+ & 87+ & 20 &  3 & BCDO \\ 
+%   \hline
+%   mean &  &  & 60.9 & 58 & 104.1 & 34.7 & 1.4 & 2 & 3.3 & 3.5 & 46 & 18.4 &  1 &  \\ 
+%   CV &  &  & 14.2 & 2.5 & 2.7 & 6.8 & 30.2 & 61.7 & 37.4 & 30 & 29.4 & 59.3 &  &  \\ 
+%   LSD &  &  & 8.5 & 1.8 & 3 & 2.5 & 0.9 & 1.7 & 2.5 & 1.3 & 21.9 & 21.9 &  &  \\ 
+%    \hline
+% \end{tabular}
+% \end{table}
+
+\newpage
+
+
+\begin{table}[ht]
+\caption{Performance of VA17W-75 in the 2019 Gulf Atlantic Nursery (AR, GA, LA, NC, SC, TX, VA)}
+\label{gawn}
+\begin{tabular}{lllllllllllllll}
+  \hline
+     &         &       & Grain & Test   & Heading & Plant  & Plant   \\
+Line & Yield   & Yield & Yield & Weight & Date    & Height & Lodging \\
+     & \% mean & Rank  & bu/ac & lb/bu  & Jan 1   & in     & (0-9)   \\
+     & (8)     & (8)   & (8)   & (5)    & (7)     & (7)    & (2)     \\
+  \hline
+  \textbf{VA17W-75} & 108 &  8.0 & 65.9 & 57.3 & 102 & 34 & 1 \\ 
+  Hilliard & 108 &  9.0 & 65.7 & 57.8 & 107 & 34 & 1 \\ 
+  AGS3030 & 100 & 25.0 & 61 & 58.1 & 102 & 34 & 1 \\ 
+  Pioneer 26R41 & 100 & 27.5 & 60.6 & 57.1 & 108+ & 33 \\ 
+  SS8641 &  98 & 29.0 & 59.9 & 57.3 & 104 & 35 & 1 \\ 
+  \hline
+  mean &  &  & 60.9 & 58  & 104.1 & 34.7 & 1.4 \\ 
+  CV   &  &  & 14.2 & 2.5 & 2.7   & 6.8  & 30.2 \\ 
+  LSD  &  &  & 8.5  & 1.8 & 3     & 2.5  & 0.9 \\ 
+   \hline
+\end{tabular}
+
+\bigskip
+
+\begin{tabular}{lllllllllllllll}
+  \hline
+     & Stripe &          &       &     &     & BYD$^c$   & Hessian \\
+Line & Rust   & Septoria & FHB$^a$   & FDK$^b$ & DON$^d$ & Virus & Fly$^d$ \\
+     & (0-9)  & (0-9)    & (0-9) & \%  & ppm & (0-9) &  \\
+     % & (4)    & (2)      & (5)   & (3) & (2) & (RNC) & (RNC) \\
+     & (4)    & (2)      & (5)   & (3) & (2) & (1) & (1) \\
+  \hline
+  \textbf{VA17W-75} & 1 & 4 & 2 & 27 & 7 &  0 & BCDO \\ 
+  Hilliard & 1 & 3 & 2- & 45 & 21 &  0 & BCD \\ 
+  AGS3030 &  1 & 4 & 4 & 55 & 10 &  0 & BCDOL \\ 
+  Pioneer 26R41 & 1 & 4 & 2- & 40 & 18 &  1 &  \\ 
+  SS8641 &  2 & 2 & 6+ & 87+ & 20 &  3 & BCDO \\ 
+  \hline
+  mean & 2    & 3.3  & 3.5 & 46   & 18.4 & 1 &  \\ 
+  CV   & 61.7 & 37.4 & 30  & 29.4 & 59.3 &   &  \\ 
+  LSD  & 1.7  & 2.5  & 1.3 & 21.9 & 21.9 &   &  \\ 
+   \hline
+\end{tabular}
+
+\raggedright{
+\footnotesize
+A plus or minus sign indicates a performance significantly above or below the test average.\\
+The 0-9 ratings indicate a genotype's response to disease or lodging where 0 = highly resistant and 9 = highly susceptible.\\
+$^a$Fusarium head blight Index = (Incidence $\times$ Severity)/100. \\
+$^b$Fusarium Diseased Kernels (percent). \\
+% $^c$ISK Index = (0.3 $\times$ FHB Incidence + 0.3 $\times$ FHB Severity + 0.4 $\times$ Fusarium damaged kernels) / 100.
+$^c$Deoxynivalenol concentration in the kernels (ppm). \\
+$^d$Barley Yellow Dwarf \\
+$^e$Letters indicate resistance to Hessian fly biotypes, B, C, D, O, L} 
+\end{table}
+
+\newpage
+
+% \begin{table}[ht]
+% \footnotesize
+% \caption{Performance of VA17W-75 across 19 locations in the 2020 Uniform Eastern Soft Winter Wheat Nursery.}
+% \label{uen}
+% \begin{tabular}{llllllll}
+%   \hline
+% Line & Yield & Yield & Test Weight & Heading Date & Height & FHB & SNL \\ 
+%  & bu/a & rank & lb/bu & Julian & in & 1-9 & 1-9 \\ 
+%    & (19) & (19) & (17) & (16) & (15) & (4) & (4) \\ 
+%   \hline
+%   KWS291 & 85.4 & 1 & 56.48 & 134.3 & 33.5 & 3.62 & 2.6 \\ 
+%   IL15-2639 & 84.5 & 2 & 58.57 & 131.8 & 36 & 1.46 & 3.4 \\ 
+%   KWS280 & 81.6 & 3 & 58.51 & 133.3 & 31 & 4.3 & 2.6 \\ 
+%   Pioneer 25R46 & 80.3 & 4 & 58.03 & 130.7 & 34.1 & 1.26 & 2.2 \\ 
+%   VA17W-75 & 79.4 & 5 & 58.65 & 128.8 & 34.4 & 3.29 & 2.3 \\ 
+%   KY06C-1178-16-10-3-34 & 79.1 & 6 & 57.43 & 131.4 & 35 & 2.62 & 2.3 \\ 
+%   LES170022 & 77.1 & 7 & 57.69 & 129.4 & 34.8 & 3.17 & 3.6 \\ 
+%   MI16R0906 & 77 & 8 & 54.41 & 131.2 & 32.6 & 6.07 & 3.4 \\ 
+%   Hilliard & 76.9 & 9 & 57.23 & 129.7 & 35.2 & 4.46 & 2.7 \\ 
+%   KWS283 & 76.8 & 10 & 56.46 & 129.7 & 32.5 & 3.58 & 4.6 \\ 
+%   13VTK59-55 & 76.7 & 11 & 58.49 & 130.1 & 32.4 & 3.66 & 3.6 \\ 
+%   X11-0420-120-13-3 & 76.3 & 12 & 57.2 & 131.2 & 35.8 & 3.26 & 4.1 \\ 
+%   Branson & 75.7 & 13 & 56.08 & 129.4 & 33.7 & 5.88 & 5.1 \\ 
+%   MI16R0742 & 75.6 & 14 & 57.94 & 131.3 & 34.6 & 4.59 & 4.2 \\ 
+%   VA16W-202 & 74.9 & 15 & 56.28 & 128.3 & 30.9 & 5.16 & 4.6 \\ 
+%   IL14-DC-64-95-118 & 74.7 & 16 & 58.5 & 129.6 & 33.6 & 2.92 & 3.9 \\ 
+%   B16\#12-9448 & 74.7 & 17 & 57.18 & 130.2 & 30.9 & 2.87 & 2.3 \\ 
+%   LES175560 & 74.7 & 18 & 56.47 & 129 & 33.2 & 4.5 & 5.3 \\ 
+%   KY07C-1145-94-12-5 & 74.6 & 19 & 58.01 & 129.4 & 33.9 & 3.8 & 5.3 \\ 
+%   ARFHBDH2\_75 & 74.4 & 20 & 57.74 & 130.4 & 32.3 & 4.04 & 2.6 \\ 
+%   TWR 99009 & 72.8 & 21 & 57.44 & 128.9 & 35.9 & 3.92 & 5 \\ 
+%   TWR 99015 & 72.8 & 22 & 57.63 & 130 & 35.6 & 4.29 & 4.6 \\ 
+%   GA15VDH-FHB-MAS10-18LEDH16F & 72.4 & 23 & 58.99 & 129.5 & 33.5 & 1.62 & 2.5 \\ 
+%   MI16R0720 & 71.7 & 24 & 53.94 & 129.5 & 32.7 & 5.6 & 5 \\ 
+%   M16*7401L & 71.4 & 25 & 57.78 & 127.6 & 36.3 & 3.29 & 3.7 \\ 
+%   TWR 99011 & 70.5 & 26 & 56.78 & 131.2 & 36.5 & 3.96 & 4.6 \\ 
+%   MO080104 & 70 & 27 & 57.86 & 129.2 & 36.5 & 1.84 & 4.3 \\ 
+%   IL15-27270 & 69.7 & 28 & 58.63 & 129.6 & 32.7 & 2.05 & 5.6 \\ 
+%   GA111007-18E45 & 64.8 & 29 & 57.29 & 127.7 & 31.5 & 6.99 & 5.3 \\ 
+%   \hline
+%   mean & 75.4 &  & 57.4 & 130.1 & 33.8 & 3.7 & 3.8 \\ 
+%   LSD & 5.8 &  & 1.1 & 1.4 & 1.1 & 1.9 & 2.3 \\ 
+%   CV & 10.1 &  & 2.5 & 1.3 & 4 & 29.9 & 35.2 \\ 
+%    \hline
+% \end{tabular}
+% \end{table}
+
+\newpage
+
+% \begin{ThreePartTable}
+% \begin{TableNotes}
+% \footnotesize
+% \item A plus or minus sign indicates a performance significantly above or below the test average.
+% \item The 0-9 ratings indicate a genotype's response to disease or lodging where 0 = highly resistant and 9 = highly susceptible.
+% \item Parentheses below column headings indicate the number of site-years in which data were collected.
+% \item [a] Barley Yellow Dwarf
+% % \item [b] Fusarium head blight Index = (Incidence $\times$ Severity)/100.
+% \item [b] Fusarium Diseased Kernels (percent).
+% % \item [c] ISK Index = (0.3 $\times$ FHB Incidence + 0.3 $\times$ FHB Severity + 0.4 $\times$ Fusarium damaged kernels) / 100.
+% \item [c] Deoxynivalenol concentration in the kernels (ppm).
+% \end{TableNotes}
+
+\begin{table}
+% \begin{longtable}{llllllll}
+\caption{Performance of VA17W-75 across 19 locations in the 2020 Uniform Eastern Soft Winter Wheat Nursery.}
+\label{uen}
+\footnotesize
+% \toprule%
+%  Line & Yield & Yield & Test Weight & Heading Date & Height & FHB score & S.nod Leaves \\ 
+%  & bu/a & rank & lb/bu & Julian & in & 1-9 & 1-9 \\ 
+%    & (19) & (19) & (17) & (16) & (15) & (4) & (4) \\ 
+% \midrule%
+% \endfirsthead
+% \toprule
+% Line & Yield & Yield & Test Weight & Heading Date & Height & FHB score & S.nod Leaves \\ 
+% \midrule
+% \endhead%
+% \midrule%
+%   Mean &  & 75.4 & 57.4 & 130.1 & 33.8 & 3.7 & 3.8 \\ 
+%   LSD (0.05) &  & 5.8 & 1.1 & 1.4 & 1.1 & 1.9 & 2.3 \\ 
+%   CV (\%) &  & 10.1 & 2.5 & 1.3 & 4 & 29.9 & 35.2 \\ 
+% \multicolumn{8}{r@{}}{continued \ldots}\\
+% \bottomrule
+% \insertTableNotes%
+% \endfoot%
+% \midrule%
+%   Mean &  & 75.4 & 57.4 & 130.1 & 33.8 & 3.7 & 3.8 \\ 
+%   LSD (0.05) &  & 5.8 & 1.1 & 1.4 & 1.1 & 1.9 & 2.3 \\ 
+%   CV (\%) &  & 10.1 & 2.5 & 1.3 & 4 & 29.9 & 35.2 \\ 
+% \bottomrule
+% \insertTableNotes%
+% \endlastfoot%
+\begin{tabular}{llllllll}
+  \toprule
+Line & Yield & Yield & Test Weight & Heading Date & Height & FHB score & S.nod Leaves \\ 
+ & bu/a & rank & lb/bu & Julian & in & 1-9 & 1-9 \\ 
+   & (19) & (19) & (17) & (16) & (15) & (4) & (4) \\ 
+  \midrule
+  KWS291 &  1 & 85.4+ & 56.5 & 134+ & 34 & 4 & 3 \\ 
+  IL15-2639 &  2 & 84.5+ & 58.6+ & 132+ & 36+ & 1- & 3 \\ 
+  KWS280 &  3 & 81.6+ & 58.5 & 133+ & 31- & 4 & 3 \\ 
+  Pioneer Brand 25R46 &  4 & 80.3 & 58 & 131 & 34 & 1- & 2 \\ 
+  VA17W-75 &  5 & 79.4 & 58.6+ & 129 & 34 & 3 & 2 \\ 
+  KY06C-1178-16-10-3-34 &  6 & 79.1 & 57.4 & 131 & 35+ & 3 & 2 \\ 
+  LES170022 &  7 & 77.1 & 57.7 & 129 & 35 & 3 & 4 \\ 
+  MI16R0906 &  8 & 77 & 54.4- & 131 & 33- & 6+ & 3 \\ 
+  Hilliard &  9 & 76.9 & 57.2 & 130 & 35+ & 4 & 3 \\ 
+  KWS283 & 10 & 76.8 & 56.5 & 130 & 32- & 4 & 5 \\ 
+  13VTK59-55 & 11 & 76.7 & 58.5 & 130 & 32- & 4 & 4 \\ 
+  X11-0420-120-13-3 & 12 & 76.3 & 57.2 & 131 & 36+ & 3 & 4 \\ 
+  Branson & 13 & 75.7 & 56.1- & 129 & 34 & 6+ & 5 \\ 
+  MI16R0742 & 14 & 75.6 & 57.9 & 131 & 35 & 5 & 4 \\ 
+  VA16W-202 & 15 & 74.9 & 56.3 & 128- & 31- & 5 & 5 \\ 
+  IL14-DC-64-95-118 & 16 & 74.7 & 58.5 & 130 & 34 & 3 & 4 \\ 
+  B16\#12-9448 & 17 & 74.7 & 57.2 & 130 & 31- & 3 & 2 \\ 
+  LES175560 & 18 & 74.7 & 56.5 & 129 & 33 & 4 & 5 \\ 
+  KY07C-1145-94-12-5 & 19 & 74.6 & 58 & 129 & 34 & 4 & 5 \\ 
+  ARFHBDH2\_75 & 20 & 74.4 & 57.7 & 130 & 32- & 4 & 3 \\ 
+  TWR 99009 & 21 & 72.8 & 57.4 & 129 & 36+ & 4 & 5 \\ 
+  TWR 99015 & 22 & 72.8 & 57.6 & 130 & 36+ & 4 & 5 \\ 
+  GA15VDH-FHB-MAS10-18LEDH16F & 23 & 72.4 & 59+ & 130 & 34 & 2- & 2 \\ 
+  MI16R0720 & 24 & 71.7 & 53.9- & 130 & 33- & 6+ & 5 \\ 
+  M16*7401L & 25 & 71.4 & 57.8 & 128- & 36+ & 3 & 4 \\ 
+  TWR 99011 & 26 & 70.5 & 56.8 & 131 & 36+ & 4 & 5 \\ 
+  MO080104 & 27 & 70 & 57.9 & 129 & 36+ & 2- & 4 \\ 
+  IL15-27270 & 28 & 69.7 & 58.6+ & 130 & 33- & 2 & 6 \\ 
+  GA111007-18E45 & 29 & 64.8- & 57.3 & 128- & 32- & 7+ & 5 \\ 
+  \midrule
+  Mean &  & 75.4 & 57.4 & 130.1 & 33.8 & 3.7 & 3.8 \\ 
+  LSD (0.05) &  & 5.8 & 1.1 & 1.4 & 1.1 & 1.9 & 2.3 \\ 
+  CV (\%) &  & 10.1 & 2.5 & 1.3 & 4 & 29.9 & 35.2 \\ 
+   \bottomrule
+   % \insertTableNotes
+\end{tabular}
+
+\raggedright{
+\footnotesize
+A plus or minus sign indicates a performance significantly above or below the test average.\\
+The 0-9 ratings indicate a genotype's response to disease or lodging where 0 = highly resistant and 9 = highly susceptible.
+}
+\end{table}
+% \end{ThreePartTable}
+
+\newpage
+
+\begin{table}
+\scriptsize
+\caption{Performance of VA17W-75 in each of 19 locations in the 2020 Uniform Eastern Soft Winter Wheat Nursery.}
+\label{uenloc}
+
+\begin{tabular}{|l|rrr|rrr|rrr|rrr|rrr|}
+  \hline
+Line & ARB$^\dagger$ & ARB & ARB & ARM & ARM & ARM & ILC & ILC & ILC & ILH & ILH & ILH & ILN & ILN & ILN \\ 
+ & \% mean & rank & bu/ac & \% mean & rank & bu/ac & \% mean & rank & bu/ac & \% mean & rank & bu/ac & \% mean & rank & bu/ac \\ 
+  \hline
+Pioneer 25R46 & 118 &   5 &  61 & 105 &  12 &  70 &  98 &  22 &  91 & 121 &   2 &  80 & 123 &   1 &  74 \\ 
+  \textbf{VA17W-75} & 116 &   6 &  60 &  97 &  17 &  65 & 103 &   6 &  95 & 116 &   3 &  77 & 117 &   3 &  70 \\ 
+  Hilliard & 140 &   2 &  73 & 100 &  16 &  67 &  99 &  20 &  91 & 107 &   9 &  71 &  96 &  20 &  57 \\ 
+  Branson &  90 &  18 &  47 &  88 &  20 &  59 & 105 &   3 &  97 & 114 &   4 &  76 & 100 &  12 &  60 \\ 
+  MO080104 &  83 &  24 &  43 &  80 &  27 &  53 &  93 &  27 &  86 & 100 &  14 &  66 &  88 &  24 &  53 \\ 
+  mean &  &  &  52 &  &  &  67 &  &  &  92 &  &  &  66 &  &  &  60 \\ 
+  LSD &  &  &  11 &  &  &   9 &  &  &  11 &  &  &   7 &  &  &  15 \\ 
+  CV &  &  &  10 &  &  &   6 &  &  &   7 &  &  &   5 &  &  &  15 \\ 
+   \hline
+\end{tabular}
+
+\bigskip
+
+\begin{tabular}{|l|rrr|rrr|rrr|rrr|rrr|}
+  \hline
+Line & ILU & ILU & ILU & INB & INB & INB & INL & INL & INL & INW & INW & INW & MDC & MDC & MDC \\ 
+ & \% mean & rank & bu/ac & \% mean & rank & bu/ac & \% mean & rank & bu/ac & \% mean & rank & bu/ac & \% mean & rank & bu/ac \\ 
+  \hline
+Pioneer 25R46 & 110 &   2 &  84 &  94 &  22 &  90 & 116 &   5 &  87 & 114 &   4 &  78 & 108 &   8 &  97 \\ 
+  \textbf{VA17W-75} & 102 &  10 &  78 & 104 &   6 & 100 &  94 &  20 &  71 & 107 &  11 &  74 &  98 &  18 &  88 \\ 
+  Hilliard & 101 &  12 &  77 &  95 &  21 &  92 & 105 &   9 &  79 & 113 &   5 &  78 & 103 &  12 &  92 \\ 
+  Branson & 106 &   7 &  81 & 109 &   5 & 105 &  93 &  21 &  70 & 113 &   6 &  77 & 102 &  13 &  91 \\ 
+  MO080104 &  96 &  23 &  73 &  99 &  16 &  95 &  90 &  23 &  68 &  80 &  27 &  55 &  95 &  19 &  86 \\ 
+  mean &  &  &  76 &  &  &  96 &  &  &  75 &  &  &  69 &  &  &  90 \\ 
+  LSD &  &  &  10 &  &  &  10 &  &  &   5 &  &  &  &  &  &  16 \\ 
+  CV &  &  &   8 &  &  &   8 &  &  &   6 &  &  &  &  &  &  11 \\ 
+   \hline
+\end{tabular}
+
+\bigskip
+
+\begin{tabular}{|l|rrr|rrr|rrr|rrr|rrr|}
+  \hline
+Line & MIM & MIM & MIM & NCR & NCR & NCR & NEL & NEL & NEL & NYI & NYI & NYI & OHN & OHN & OHN \\ 
+ & \% mean & rank & bu/ac & \% mean & rank & bu/ac & \% mean & rank & bu/ac & \% mean & rank & bu/ac & \% mean & rank & bu/ac \\ 
+  \hline
+Pioneer 25R46 & 107 &   9 &  94 & 122 &   2 &  88 & 101 &  16 &  40 & 101 &  13 & 119 & 102 &  10 &  71 \\ 
+  \textbf{VA17W-75} &  98 &  21 &  86 &  83 &  28 &  59 & 108 &   7 &  43 & 107 &   7 & 126 & 100 &  14 &  69 \\ 
+  Hilliard &  85 &  26 &  75 & 116 &   3 &  83 &  93 &  22 &  37 & 107 &   5 & 126 &  92 &  26 &  63 \\ 
+  Branson & 106 &  10 &  93 &  86 &  26 &  62 &  86 &  25 &  35 & 107 &   6 & 126 &  97 &  20 &  67 \\ 
+  MO080104 & 103 &  15 &  91 & 108 &   5 &  77 &  97 &  19 &  39 & 101 &  15 & 118 &  85 &  29 &  59 \\ 
+  mean &  &  &  88 &  &  &  72 &  &  &  40 &  &  & 118 &  &  &  69 \\ 
+  LSD &  &  &   2 &  &  &  20 &  &  &  12 &  &  &   9 &  &  &   7 \\ 
+  CV &  &  &   1 &  &  &  11 &  &  &  15 &  &  &   4 &  &  &   5 \\ 
+   \hline
+\end{tabular}
+
+\bigskip
+
+\begin{tabular}{|l|rrr|rrr|rrr|rrr|}
+  \hline
+Line & OHR & OHR & OHR & TNM & TNM & TNM & VAB & VAB & VAB & VAW & VAW & VAW \\ 
+ & \% mean & rank & bu/ac & \% mean & rank & bu/ac & \% mean & rank & bu/ac & \% mean & rank & bu/ac \\ 
+  \hline
+Pioneer 25R46 & 112 &   3 &  82 & 103 &  13 &  62 &  90 &  29 &  66 &  94 &  24 &  92 \\ 
+  \textbf{VA17W-75} & 108 &   5 &  79 & 117 &   5 &  71 & 110 &   4 &  80 & 120 &   1 & 117 \\ 
+  Hilliard &  91 &  25 &  67 &  98 &  19 &  59 &  96 &  18 &  70 & 105 &   7 & 103 \\ 
+  Branson &  91 &  26 &  66 &  91 &  23 &  55 & 104 &   8 &  75 &  98 &  17 &  96 \\ 
+  MO080104 &  91 &  27 &  66 &  64 &  29 &  38 &  96 &  20 &  70 &  97 &  20 &  95 \\ 
+  mean &  &  &  73 &  &  &  60 &  &  &  72 &  &  &  98 \\ 
+  LSD &  &  &   8 &  &  &  12 &  &  &  11 &  &  &   8 \\ 
+  CV &  &  &   6 &  &  &  10 &  &  &   7 &  &  &   4 \\ 
+   \hline
+\end{tabular}
+
+\raggedright{
+\footnotesize
+$^\dagger$Location abbreviations indicate the state abreviation (first two letters) and city (last letter).}
+\end{table}
+
+
+\newpage
+
+\begin{table}
+\caption{Performance of VA17W-75 in the Uniform Southern Scab Nursery in 2019.}
+\label{ussn}
+\begin{tabular}{llllllll}
+  \hline
+Line & FHB Rating$^a$ & FHB incidence$^b$ & FHB severity$^c$ & FHB index$^d$ & FDK$^e$ & ISK$^f$ & DON$^g$ \\ 
+  \hline
+JAMESTOWN & 3 & 67 & 29 & 18 & 21 & 38 & 4 \\ 
+  ERNIE & 3 & 61 & 22 & 15 & 17 & 33 & 5 \\ 
+  BESS & 3 & 71 & 30 & 21 & 16 & 36 & 5 \\ 
+  \textbf{VA17W-75} & 4 & 73 & 33 & 23 & 20 & 42 & 5 \\ 
+  NC14-23372 & 3 & 79 & 29 & 24 & 26 & 39 & 9 \\ 
+  COKER9835 & 7+ & 99 & 65+ & 65+ & 68+ & 74+ & 16 \\ 
+  AGS 2035 & 6 & 92 & 44 & 41 & 49+ & 56 & 16 \\ 
+  SS 8641 & 8+ & 97 & 72+ & 70+ & 76+ & 73+ & 20+ \\ 
+  mean & 3.9 & 76.5 & 39 & 30.7 & 29 & 43 & 8 \\ 
+  CV & 30.6 & 16.1 & 26.9 & 36.7 & 34.4 & 16.6 & 50.7 \\ 
+  LSD & 2.6 & 24.3 & 21 & 22.3 & 19.4 & 14 & 8 \\ 
+   \hline
+\end{tabular}
+
+\raggedright{
+\footnotesize
+$^a$Fusarium head blight Rating is a 0-9 visual score  \\
+$^b$Fusarium head blight Incidence is the percent of heads with some visual disease \\
+$^c$Fusarium head blight Severity is the average severity of head infection  \\
+$^d$Fusarium head blight Index = (Incidence $\times$ Severity)/100 \\
+$^e$Fusarium Diseased Kernels (percent) \\
+$^f$ISK Index = (0.3 $\times$ FHB Incidence + 0.3 $\times$ FHB Severity + 0.4 $\times$ Fusarium damaged kernels) / 100\\
+$^g$Deoxynivalenol concentration in the kernels (ppm)\\
+}
+\end{table}
+
+\newpage
+
+\begin{table}
+\caption{Milling and Baking quality measures for VA17W-75 grown in Lanexa VA in 2021.}
+\label{qual}
+\begin{tabular}{llllllllllll}
+  \hline
+ &  & Grain & Kernel & Test & Flour & Softness & Flour.1 & Water & Sodium & Sucrose & Cookie \\ 
+Line & N & Protein  & Hardness & Weight & Yield & Equiv. & Protein & SRC & Carb. & SRC & Diameter \\ 
+   &  & (\%) &  & (lb/bu) & (\%) & (\%) & (\%) & (\%) & SRC (\%) & (\%) & (cm) \\ 
+  \hline
+  13VTK59-55 & 3-9 & 10.1 & 29.4 & 61.8 & 67.7 & 52.8 & 8.3 & 57 & 72.8 & 93.8 & 18.5 \\ 
+  DH15SRW65-53 & 1-3 & 10.3 & 22 & 61.6 & 68.4 & 53.2 & 8.4 & 54.6 & 67.3 & 89.6 & 19.2 \\ 
+  16VDH-SRW03-023 & 1-4 & 10.1 & 18 & 59.1 & 68.3 & 56.8 & 7.9 & 56.9 & 71.6 & 97.1 & 18.8 \\ 
+  \textbf{VA17W-75} & 3-11 & 10.4 & 31.8 & 61.4 & 66.8 & 53.6 & 8.2 & 58.6 & 77.7 & 105.9 & 17.7 \\ 
+  Branson* & 75-311 & 10.6 & 6 & 59.8 & 69.2 & 61.6 & 8.3 & 52.3 & 66.9 & 91.2 & 18.8 \\ 
+  Hilliard* & 8-124  & 10.5 & 15.1 & 59.8 & 66.9 & 59.6 & 8.1 & 55 & 73.3 & 100.6 & 18.4 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+\newpage
+
+
+% \begin{table}
+% \caption{Milling and Baking quality measures from the Virginia State Official Variety Test in Warsaw VA, 2020.} 
+% \label{qual2}
+% \tiny
+% \begin{tabular}{lrrrrrlrrrrrrrrlr}
+%   \hline
+%      & NIR       & SKCS     & SKCS     & SKCS   & Adjusted & Adjusted & Adjusted &            &           & Lactic & Sodium    &         &       &          &          &  \\ 
+%      & Kernel    & Kernel   & Kernel   & Kernel & Flour    & Flour    & Flour    & Softness   & Flour     & Acid   & Carbonate & Sucrose & Water & Cookie   & Cookie   & Cookie \\ 
+% Line & Protein   & Hardness & Diameter & Weight & Yield    & Yield    & Yield    & Equivalent & Protein   & SRC    & SRC       & SRC     & SRC   & Diameter & Diameter & Diameter \\ 
+%      & (at 12\%) &          & (mm)     & (mg)   & (\%)     &  Grade   & Rank     & (\%)       & (at 14\%) & (\%)   & (\%)      & (\%)    & (\%)  & (cm)     & Grade    &  Rank \\ 
+%   \hline
+%   Hilliard & 9.60 & 20.70 & 2.90 & 41.90 & 67.40 & D & 107.00 & 56.40 & 7.50 & 107.80 & 75.30 & 101.30 & 57.30 & 17.70 & F & 116.00 \\ 
+%   Liberty 5658 & 9.30 & 28.30 & 2.90 & 41.60 & 69.00 & C & 73.00 & 56.40 & 7.60 & 123.70 & 72.60 & 96.60 & 55.80 & 18.00 & D & 103.00 \\ 
+%   CP 8118 & 9.50 & 34.70 & 2.80 & 40.20 & 67.00 & D & 119.00 & 53.70 & 8.10 & 109.10 & 80.60 & 105.40 & 59.90 & 17.50 & F & 122.00 \\ 
+%   SH 7222 & 9.10 & 31.10 & 2.80 & 39.50 & 69.80 & B & 44.00 & 55.60 & 7.50 & 113.10 & 77.90 & 98.70 & 58.10 & 18.10 & D & 98.00 \\ 
+%   \textbf{VA17W-75} & 9.70 & 35.80 & 2.80 & 41.20 & 67.70 & D & 100.00 & 51.10 & 7.90 & 114.40 & 79.50 & 104.50 & 60.10 & 17.60 & F & 119.00 \\ 
+%   15VDH-FHB-MAS25-15 & 9.20 & 28.80 & 2.70 & 34.90 & 66.10 & F & 129.00 & 54.60 & 7.40 & 123.20 & 79.10 & 104.60 & 59.50 & 18.10 & D & 97.00 \\ 
+%   15VDH-FHB-MAS38-01 & 9.40 & 13.60 & 3.00 & 38.90 & 68.40 & C & 83.00 & 52.30 & 7.00 & 86.70 & 68.90 & 92.20 & 53.50 & 18.50 & C & 69.00 \\ 
+%   15VDH-FHB-MAS33-13 & 9.50 & 22.50 & 2.80 & 35.80 & 69.90 & B & 42.00 & 56.40 & 7.50 & 115.90 & 69.90 & 94.90 & 54.90 & 18.40 & C & 81.00 \\ 
+%   16VDH-SRW03-023 & 9.10 & 24.30 & 2.90 & 42.00 & 69.70 & B & 48.00 & 54.80 & 7.30 & 94.70 & 74.50 & 97.10 & 56.90 & 18.80 & C & 51.00 \\ 
+%   16VDH-SRW09-025 & 9.40 & 22.80 & 2.80 & 40.10 & 68.00 & D & 93.00 & 57.10 & 7.30 & 111.50 & 73.90 & 101.50 & 56.10 & 18.80 & C & 49.00 \\ 
+%   SY Viper & 9.90 & 29.00 & 2.90 & 47.50 & 67.10 & D & 114.00 & 51.80 & 8.10 & 102.50 & 81.60 & 108.30 & 60.00 & 18.20 & D & 96.00 \\ 
+%   Dyna-Gro Laverne & 9.80 & 24.40 & 2.90 & 46.30 & 68.80 & C & 77.00 & 48.50 & 6.50 & 89.70 & 73.90 & 100.60 & 60.10 & 18.30 & D & 88.00 \\ 
+%   Dyna-Gro Shirley & 9.60 & 15.60 & 2.90 & 44.70 & 70.70 & A & 19.00 & 52.30 & 7.50 & 81.30 & 74.90 & 95.00 & 57.70 & 18.90 & B & 42.00 \\ 
+%   USG 3316 & 8.80 & 13.70 & 2.80 & 39.20 & 72.60 & A & 1.00 & 63.70 & 7.00 & 100.00 & 70.00 & 87.70 & 53.80 & 19.90 & A & 4.00 \\ 
+%   Pioneer 26R45 & 9.20 & 18.70 & 2.70 & 38.00 & 69.70 & B & 46.00 & 54.60 & 7.40 & 80.10 & 66.60 & 87.00 & 50.60 & 19.30 & A & 22.00 \\ 
+%    \hline
+% \end{tabular}
+% \end{table}
+
+\end{landscape}
+
+
+\end{document}
